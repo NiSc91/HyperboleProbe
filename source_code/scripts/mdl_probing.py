@@ -66,7 +66,8 @@ dataset_info_dict = {
     "lcc_en_ru": Dataset_info("lcc_en_ru", num_of_spans=1),
     "lcc_es_fa": Dataset_info("lcc_es_fa", num_of_spans=1),
     "lcc_es_ru": Dataset_info("lcc_es_ru", num_of_spans=1),
-    "lcc_fa_ru": Dataset_info("lcc_fa_ru", num_of_spans=1)
+    "lcc_fa_ru": Dataset_info("lcc_fa_ru", num_of_spans=1),
+    "hypo_en": Dataset_info("hypo_en", num_of_spans=1)
 }
 
 model_checkpoint = sys.argv[1]
@@ -286,6 +287,12 @@ class Dataset_handler:
             self.json_to_dataset('./manual_dataset.json', data_type="train", fraction = frac, to_sentence_span=True)
             self.json_to_dataset('./manual_dataset.json', data_type="dev", fraction = frac, to_sentence_span=True)
             self.json_to_dataset('./manual_dataset.json', data_type="test", fraction = frac, to_sentence_span=True)
+        elif dataset_info.dataset_name == "hypo_en":
+            frac = 1
+            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="dev", fraction = 0.01)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac)
+
         else:
             throw("Error: Unkown dataset name!")
 
@@ -1069,7 +1076,7 @@ class MDL_probe_trainer(Trainer):
     def __init__(self, language_model, dataset_handler: Dataset_handler, 
                  verbose=True, device='cuda',
                  pool_method="attn", start_eval = False, normalize_layers=False, early_stopping_patience=2):
-        self.portion_ratios = [0.001, 0.002, 0.004, 0.008, 0.016, 0.032, 0.0625, 0.125, 0.25, 0.5, 1.0]
+        self.portion_ratios = [0.002, 0.004, 0.008, 0.016, 0.032, 0.0625, 0.125, 0.25, 0.5, 1.0]
         self.early_stopping_patience = early_stopping_patience
         self.dataset_handler = dataset_handler
         self.num_of_spans = self.dataset_handler.dataset_info.num_of_spans
