@@ -37,7 +37,7 @@ class Dataset_info:
 
 POOL_METHOD = "attn"  # 'max', 'attn'
 BATCH_SIZE = 32
-#SEED = 0
+SEED = 0
 LEARNING_RATE = 5e-5
 DEVICE = 'cuda' if torch.cuda.is_available() else "cpu"
 
@@ -1322,14 +1322,16 @@ class MDL_probe_trainer(Trainer):
         print("Test Loss:", self.history[portion_idx]["loss"]["test"][-1])
         # print("MDL Loss:", self.history[portion_idx]["loss"]["mdl"][-1])
 
-
     def draw_weights(self, epoch, portion_idx, comprehensive=False):
+        # Save figures
+        fig_path = os.path.join("mdl_results", "mdl"+"_"+model_checkpoint+"_"+self.dataset_handler.dataset_info.dataset_name+"_"+str(SEED))
+
         w = self.history[portion_idx]["metrics"]["micro_f1"]["test"][-1]
         # print(self.history)
         plt.bar(np.arange(len(w), dtype=int), w)
         plt.ylabel('micro f1')
         plt.xlabel('Layer');
-        plt.show()
+        plt.savefig(os.path.join(fig_path, "plot1.jpg"))
 
         if comprehensive:
             # print(self.history)
@@ -1337,13 +1339,13 @@ class MDL_probe_trainer(Trainer):
             plt.bar(np.arange(len(w), dtype=int), w, color="magenta")
             plt.ylabel('Online Codelength')
             plt.xlabel('Layer');
-            plt.show()
+            plt.savefig(os.path.join(fig_path, "plot2.jpg"))
 
             w = self.history[portion_idx]["metrics"]["compression"][-1]
             plt.bar(np.arange(len(w), dtype=int), w, color="magenta")
             plt.ylabel('Compression')
             plt.xlabel('Layer');
-            plt.show()
+            plt.savefig(os.path.join(fig_path, "plot3.jpg"))
 
         print("Loss History")
         loss_history = self.history[portion_idx]["loss"]
@@ -1353,7 +1355,7 @@ class MDL_probe_trainer(Trainer):
         plt.ylabel('Loss')
         plt.xlabel('Epoch')
         plt.legend(['Train', 'Test'], loc='lower left')
-        plt.show()
+        plt.savefig(os.path.join(fig_path, "plot4.jpg"))
 
         print("Full MDL Loss History")
         train_loss_history = []
@@ -1367,7 +1369,7 @@ class MDL_probe_trainer(Trainer):
         plt.ylabel('Loss')
         plt.xlabel('Epoch')
         plt.legend(['Train', 'Test'], loc='lower left')
-        plt.show()
+        plt.savefig(os.path.join(fig_path, "plot5.jpg"))
 
 my_mdl_probe_trainer = None
 gpu_cache = {}
