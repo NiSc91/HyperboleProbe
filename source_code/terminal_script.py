@@ -8,11 +8,11 @@ Original file is located at
 """
 
 # Commented out IPython magic to ensure Python compatibility.
-from google.colab import auth
+#from google.colab import auth
 
-! pip install datasets
-! pip install transformers
-! pip install sentencepiece
+#! pip install datasets
+#! pip install transformers
+#! pip install sentencepiece
 
 bert-base-uncased
 roberta-base
@@ -401,3 +401,7 @@ python3 $MDL_CODE google/electra-base-discriminator vua_verb 0
 ! python3 $EDGE_CODE xlm-roberta-base-random-weights lcc_ru_ru 0
 ! python3 $EDGE_CODE xlm-roberta-base-random-weights lcc_ru_ru 1
 ! python3 $EDGE_CODE xlm-roberta-base-random-weights lcc_ru_ru 2
+
+! python3 $EDGE_CODE xlm-roberta-base-random-weights hypo_en 0
+! python3 $EDGE_CODE xlm-roberta-base-random-weights hypo_en 1
+! python3 $EDGE_CODE xlm-roberta-base-random-weights hypo_en 2
