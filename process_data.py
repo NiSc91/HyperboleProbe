@@ -39,13 +39,16 @@ def get_target(x, y, z):
 
     f = lambda s: np.array(word_tokenize(re.sub(r"\.+", ".", s.lower()).translate(dict.fromkeys(string.punctuation))))
     #f = lambda s: np.array(word_tokenize(s.lower()))
-    y = y.replace(".", "!")
+    #y = y.replace(".", "PUNCT")
 
     x = f(x); y = f(y); z = f(z)
-    #y = np.array(['STOP' if w in stopwords.words('english') else w for w in y])
+    filtered_words = stopwords.words('english')+['!', '.', ',']
+    x_filtered = np.array(['xSTOP' if w in filtered_words else w for w in x])
+    y_filtered = np.array(['ySTOP' if w in filtered_words else w for w in y])
 
-    x_indices = np.where(~np.in1d(x, z))[0]
-    y_indices = np.where(np.in1d(y, x))[0]
+    #x_indices = np.where(~np.in1d(x, z))[0]
+    x_indices = np.where(np.in1d(x_filtered, y_filtered))[0]
+    y_indices = np.where(np.in1d(y_filtered, x_filtered))[0]
 
     try:
         if len(x_indices) >= 3:
@@ -91,17 +94,22 @@ hypo_df['targets'] = pd.concat([target_df['hyp'], target_df['min']], ignore_inde
 # Word tokenize text
 hypo_df['text'] = hypo_df.apply(lambda X: " ".join(word_tokenize(X['text'])), axis=1)
 
+## Save the entire dataset to csv-file
+
 ## Split data (70/30, in accordance with Biddle et Al.)
 hypo_df_train = hypo_df.sample(frac=0.7, random_state=1)
-hypo_df_test = hypo_df.drop(hypo_df_train.index)
+hypo_df_remains = hypo_df.drop(hypo_df_train.index)
+# Split test data into development and test sets
+hypo_df_dev = hypo_df_remains.sample(frac=0.5, random_state=1)
+hypo_df_test = hypo_df_remains.drop(hypo_df_dev.index)
 
 ## Write to json files
 current_dir = os.getcwd()
 new_dir = os.path.join(current_dir, "preprocessed_hypo_dataset")
 if not os.path.exists(new_dir):
-    os.mkdir(new_dir)
+    os.mkdir(new_dir)   
 
-hypo_df.to_csv(os.path.join(new_dir, "preproc_hypo_all.csv"), index=False)
+hypo_df.to_csv(os.path.join(new_dir, "preproc_hypo_all.csv"), index=True)
 hypo_df_train.to_json(os.path.join(new_dir, "train.json"), 'records', lines=True)
 hypo_df_test.to_json(os.path.join(new_dir, "test.json"), orient='records', lines=True)
 

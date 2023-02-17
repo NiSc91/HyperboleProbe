@@ -290,7 +290,7 @@ class Dataset_handler:
             self.json_to_dataset('./manual_dataset.json', data_type="test", fraction = frac, to_sentence_span=True)
         elif dataset_info.dataset_name == "hypo_en":
             frac = 1
-            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False, to_sentence_span=False)
             self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="dev", fraction = 0.667, to_sentence_span=True)
             self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=True)
 
@@ -1212,7 +1212,6 @@ class MDL_probe_trainer(Trainer):
                         steps += 1
                     self.vprint("Done")
                     # print(f"loss: {running_loss / steps}")
-
                 
                 if epoch == epochs - 1 or self.check_early_stop(portion_idx):
                     self.update_history(epoch + 1, portion_idx, train_dataset, test_dataset, train_loss = running_loss / steps, last_epoch_of_portion=True)
@@ -1222,7 +1221,6 @@ class MDL_probe_trainer(Trainer):
                     self.update_history(epoch + 1, portion_idx, train_dataset, test_dataset, train_loss = running_loss / steps)
                 self.draw_weights(epoch, portion_idx)
                 
-
             self.draw_weights(0, portion_idx, comprehensive=True)
             
     # Private:
@@ -1230,9 +1228,12 @@ class MDL_probe_trainer(Trainer):
         current_portion_losses = self.history[portion_idx]["loss"]["test"]
         return len(current_portion_losses) > self.early_stopping_patience and current_portion_losses[-self.early_stopping_patience] < current_portion_losses[-1]
 
-    def calc_loss(self, tokenized_dataset, batch_size=BATCH_SIZE, print_metrics=False, just_micro=False, desc=""):
+    def calc_loss(self, tokenized_dataset, batch_size=BATCH_SIZE, print_metrics=False, just_micro=False, desc="", save_file_path=None):
+        # Set all edge probe models to eval mode
         for edge_probe_model in self.edge_probe_models:
             edge_probe_model.eval()
+    
+        # Disable gradient calculation for this section
         with torch.no_grad():
             running_loss = 0
             mdl_loss = [0 for _ in range(self.num_layers)]
@@ -1240,48 +1241,79 @@ class MDL_probe_trainer(Trainer):
             steps = 0
             preds = [[None] for _ in range(self.num_layers)]
             micro_f1 = [[None] for _ in range(self.num_layers)]
+            # Added data structure to store information to save to csv-file
+            data = {'sample': [], 'true_label': []}
+            
             for i in tqdm(range(0, dataset_len, batch_size), desc=desc):
+                # Calculate the current batch size
                 # if int(i / batch_size) % 100 == 0:
                 #     print("memory:", psutil.virtual_memory().percent, gc.collect(), psutil.virtual_memory().percent)
                 step = batch_size
                 if i + batch_size > dataset_len:
                     step = dataset_len - i
-
+                
+                # Get the spans for the current batch
                 spans_torch_dict = self.prepare_batch_data(tokenized_dataset, i, i + step, pad=True)
+                # Get the labels for the current batch
                 labels = spans_torch_dict["one_hot_labels"]
                 labels = labels.argmax(dim=1).long()
                 labels = labels.to(self.device)
 
+                # Iterate through each edge probe model
                 for epm_idx, edge_probe_model in enumerate(self.edge_probe_models):
                     if self.num_of_spans == 2:
+                        # Prepare the span torch dict for two spans
                         span_torch_dict = {"span1": spans_torch_dict["span1"][:, epm_idx:epm_idx+1, :, :],
                                            "span1_attention_mask": spans_torch_dict["span1_attention_mask"],
                                            "span2": spans_torch_dict["span2"][:, epm_idx:epm_idx+1, :, :],
                                            "span2_attention_mask": spans_torch_dict["span2_attention_mask"],
                                            }
                     else:
+                        # Prepare the span torch dict for one span
                         span_torch_dict = {"span1": spans_torch_dict["span1"][:, epm_idx:epm_idx+1, :, :], 
                                            "span1_attention_mask": spans_torch_dict["span1_attention_mask"]}
 
-                    # forward
+                    # forward pass through the edge probe model
                     outputs = edge_probe_model(span_torch_dict)
-                    
+                    # Append the predictions for the current batch to the existing predictions
                     preds[epm_idx] = outputs if i == 0 else torch.cat((preds[epm_idx], outputs), 0)
+                    # Calculate the loss for the current batch and add it to the running loss
                     loss = edge_probe_model.training_criterion(outputs.to(self.device), labels)
                     running_loss += loss.item()
                     mdl_loss[epm_idx] += loss.item() * step  # MDL Loss won't be divided by steps
                     steps += 1
+                    
+                    # Store the data in the dictionary
+                    #for j in range(step):
+                        #data["text"].append(tokenized_dataset["text"][i+j])
+                        #data["true_label"].append(tokenized_dataset["one_hot_label"][i+j].argmax())
+                        #data["prediction"].append(preds[epm_idx][j].argmax())
 
+        # Convert the true labels and predictions to numpy arrays
         y_true = np.array(tokenized_dataset["one_hot_label"]).argmax(-1)
+        # Store tokenized text samples, true labels, and predictions in a pandas dataframe
+        pdb.set_trace()
+        df = pd.DataFrame()
+        df['text'] = tokenized_dataset["text"]
+        df['labels'] = y_true.tolist()
+        
+        # Get predictions and micro F1 scores
         for idx, pred in enumerate(preds): 
             pred = pred.cpu().argmax(-1)
+            df[f'preds_{idx+1}'] = pred
             micro_f1[idx] = f1_score(y_true, pred, average='micro')
+
+        # Save the dataframe to a CSV file
+
+        if save_file_path:
+            df.to_csv(save_file_path, index=False)
         
         if print_metrics:
             # labels_list = self.dataset_handler.labels_list
             # if not just_micro:
             #     print(classification_report(y_true, preds, target_names=labels_list, labels=range(len(labels_list))))
             print("MICRO F1:", micro_f1)
+        
         return running_loss / steps, micro_f1, mdl_loss
 
     def update_history(self, epoch, portion_idx, train_dataset, test_dataset, train_loss = None, last_epoch_of_portion=False):
@@ -1324,7 +1356,6 @@ class MDL_probe_trainer(Trainer):
         # print("MDL Loss:", self.history[portion_idx]["loss"]["mdl"][-1])
 
     def draw_weights(self, epoch, portion_idx, comprehensive=False):
-        #pdb.set_trace()
         # Save figures
         fig_path = os.path.join("mdl_results", "mdl"+"_"+model_checkpoint+"_"+self.dataset_handler.dataset_info.dataset_name+"_"+str(SEED))
         if not os.path.exists(fig_path):
