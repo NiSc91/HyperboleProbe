@@ -77,6 +77,11 @@ SEED = int(sys.argv[3])
 
 SEQ2SEQ_MODEL = "t5" in model_checkpoint or "pegasus" in model_checkpoint or "bart" in model_checkpoint
 
+if model_checkpoint == 'google/electra-base-discriminator':
+    pdb.set_trace()
+
+    
+
 def set_seed(seed):
     random.seed(seed)
     np.random.seed(seed)
@@ -94,8 +99,8 @@ else:
     tokenizer.padding_side = 'right'
     model = AutoModel.from_pretrained(model_checkpoint)
 
-# model.save_pretrained(model_checkpoint)
-# tokenizer.save_pretrained(model_checkpoint)
+model.save_pretrained(model_checkpoint)
+tokenizer.save_pretrained(model_checkpoint)
 
 class Utils:
     def one_hot(idx, length):
@@ -291,8 +296,8 @@ class Dataset_handler:
         elif dataset_info.dataset_name == "hypo_en":
             frac = 1
             self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False, to_sentence_span=False)
-            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="dev", fraction = 0.667, to_sentence_span=True)
-            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=False)
+            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=False)
 
         else:
             throw("Error: Unkown dataset name!")
@@ -483,7 +488,10 @@ def tokenize_and_one_hot(examples, **fn_kwargs):
         if end_word_id - 1 not in word_ids[::-1]:
             print("Warning: There is no", end_word_id - 1, "in", word_ids, examples["text"].split(), examples["label"])
             end_word_id -= 1
-        span[1] = len(word_ids) - 1 - word_ids[::-1].index(end_word_id - 1) + 1  # Last occurance (+1 for open range)
+        try:
+            span[1] = len(word_ids) - 1 - word_ids[::-1].index(end_word_id - 1) + 1  # Last occurance (+1 for open range)
+        except ValueError as v:
+            pdb.post_mortem()
         return span
 
     # tokenized_inputs["span1"] = [0, 0]
@@ -1135,6 +1143,7 @@ class MDL_probe_trainer(Trainer):
         print("Creating New History")
 
     def train(self, batch_size, epochs=3):
+        #pdb.set_trace()
         temp_dataset_train = self.dataset_handler.tokenized_dataset["train"]
         temp_dataset_dev = self.dataset_handler.tokenized_dataset["dev"]
         temp_dataset_test = self.dataset_handler.tokenized_dataset["test"]
@@ -1143,12 +1152,14 @@ class MDL_probe_trainer(Trainer):
         print(self.dataset_handler.tokenized_dataset)
         # concatenated_dataset = datasets.concatenate_datasets([temp_dataset_train, temp_dataset_test])
         concatenated_dataset = temp_dataset_train
+        dev_dataset = temp_dataset_dev
         print(concatenated_dataset)
 
         for edge_probe_model in self.edge_probe_models:
             edge_probe_model.to(self.MLP_device)
         if self.start_eval:
             self.update_history(epoch = 0)
+
         for portion_idx, portion_ratio in enumerate(self.portion_ratios[0:-1]):
             test_portion_ratio = self.portion_ratios[portion_idx + 1] - portion_ratio
             train_test_dataset = concatenated_dataset.train_test_split(train_size=portion_ratio, test_size=test_portion_ratio, shuffle=False)
@@ -1222,7 +1233,9 @@ class MDL_probe_trainer(Trainer):
                 self.draw_weights(epoch, portion_idx)
                 
             self.draw_weights(0, portion_idx, comprehensive=True)
-            
+            #pdb.set_trace()
+            self.save_predictions(dev_dataset, "error_analysis")
+
     # Private:
     def check_early_stop(self, portion_idx):
         current_portion_losses = self.history[portion_idx]["loss"]["test"]
@@ -1292,7 +1305,7 @@ class MDL_probe_trainer(Trainer):
         # Convert the true labels and predictions to numpy arrays
         y_true = np.array(tokenized_dataset["one_hot_label"]).argmax(-1)
         # Store tokenized text samples, true labels, and predictions in a pandas dataframe
-        pdb.set_trace()
+        #pdb.set_trace()
         df = pd.DataFrame()
         df['text'] = tokenized_dataset["text"]
         df['labels'] = y_true.tolist()
@@ -1302,11 +1315,6 @@ class MDL_probe_trainer(Trainer):
             pred = pred.cpu().argmax(-1)
             df[f'preds_{idx+1}'] = pred
             micro_f1[idx] = f1_score(y_true, pred, average='micro')
-
-        # Save the dataframe to a CSV file
-
-        if save_file_path:
-            df.to_csv(save_file_path, index=False)
         
         if print_metrics:
             # labels_list = self.dataset_handler.labels_list
@@ -1314,10 +1322,11 @@ class MDL_probe_trainer(Trainer):
             #     print(classification_report(y_true, preds, target_names=labels_list, labels=range(len(labels_list))))
             print("MICRO F1:", micro_f1)
         
-        return running_loss / steps, micro_f1, mdl_loss
+        return running_loss / steps, micro_f1, mdl_loss, df
 
     def update_history(self, epoch, portion_idx, train_dataset, test_dataset, train_loss = None, last_epoch_of_portion=False):
-        test_loss, test_f1, test_mdl_loss = self.calc_loss(test_dataset, print_metrics=True, desc="Test Loss")
+        test_loss, test_f1, test_mdl_loss, df = self.calc_loss(test_dataset, print_metrics=True, desc="Test Loss")
+
         self.history[portion_idx]["loss"]["train"].append(train_loss)
         self.history[portion_idx]["loss"]["test"].append(test_loss) # Average of all layers
         self.history[portion_idx]["metrics"]["micro_f1"]["test"].append(test_f1)
@@ -1410,6 +1419,22 @@ class MDL_probe_trainer(Trainer):
         plt.legend(['Train', 'Test'], loc='lower left')
         plt.savefig(os.path.join(fig_path, "plot5.jpg"))
         plt.close()
+
+    def save_predictions(self, dataset, filename):
+        test_loss, test_f1, test_mdl_loss, df = self.calc_loss(dataset, print_metrics=True, desc="Dev Loss")
+        # Save to file path
+        csv_path = os.path.join("mdl_results", "mdl"+"_"+model_checkpoint+"_"+self.dataset_handler.dataset_info.dataset_name+"_"+str(SEED))
+        if not os.path.exists(csv_path):
+            os.mkdir(csv_path)
+        
+        # Save file
+        df.to_csv(os.path.join(csv_path, filename),)
+
+
+
+
+
+
 
 my_mdl_probe_trainer = None
 gpu_cache = {}

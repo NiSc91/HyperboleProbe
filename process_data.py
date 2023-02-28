@@ -2,6 +2,7 @@ import os
 import string
 import pdb
 import re
+import ast
 import pandas as pd
 import numpy as np
 import nltk
@@ -10,7 +11,7 @@ from nltk.corpus import stopwords
 
 corpus = pd.read_csv("HYPO.tsv", delimiter="\t")
 # Drop missing values
-corpus.dropna(inplace=True)
+corpus = corpus.dropna().reset_index(drop=True) # 698 items left
 
 hypo = corpus.iloc[:, 0]
 paraphrase = corpus.iloc[:, 1]
@@ -86,7 +87,7 @@ target_df = pd.DataFrame(list(zip(*targets)),index=['hyp', 'min']).T
 column_names = ['text', 'targets']
 hypo_df = pd.DataFrame(columns=column_names)
 
-hypo_df['text'] = pd.concat([hypo, minimal], ignore_index=True)
+hypo_df['text'] = pd.concat([hypo, minimal])
 hypo_df['targets'] = pd.concat([target_df['hyp'], target_df['min']], ignore_index=True)
 #hypo_df['label'] = np.array([pos_labels, neg_labels, neg_labels]).reshape(-1)
 #label_names = ['pos', 'neg']
@@ -94,28 +95,50 @@ hypo_df['targets'] = pd.concat([target_df['hyp'], target_df['min']], ignore_inde
 # Word tokenize text
 hypo_df['text'] = hypo_df.apply(lambda X: " ".join(word_tokenize(X['text'])), axis=1)
 
-## Save the entire dataset to csv-file
+## Write to CSV file
 
-## Split data (70/30, in accordance with Biddle et Al.)
-hypo_df_train = hypo_df.sample(frac=0.7, random_state=1)
-hypo_df_remains = hypo_df.drop(hypo_df_train.index)
-# Split test data into development and test sets
-hypo_df_dev = hypo_df_remains.sample(frac=0.5, random_state=1)
-hypo_df_test = hypo_df_remains.drop(hypo_df_dev.index)
-
-## Write to json files
 current_dir = os.getcwd()
 new_dir = os.path.join(current_dir, "preprocessed_hypo_dataset")
 if not os.path.exists(new_dir):
     os.mkdir(new_dir)   
 
-hypo_df.to_csv(os.path.join(new_dir, "preproc_hypo_all.csv"), index=True)
+#hypo_df.to_csv(os.path.join(new_dir, "preproc_hypo_all.csv"), index=True)
+
+### Load manually edited data
+
+import ast
+import pandas as pd
+
+hypo_df = pd.read_csv(os.path.join("data", "preproc_hypo_all_edited.csv")).drop('index_col', axis=1)
+hypo_df['targets'] = hypo_df['targets'].apply(ast.literal_eval)
+
+#import csv
+#with open(os.path.join('data', 'preproc_hypo_all_edited.csv'), newline='') as csvfile:
+#    reader = csv.DictReader(csvfile)
+#    for i, row in enumerate(reader):
+#        try:
+#            targets = ast.literal_eval(row['targets'])
+#        except SyntaxError as e:
+#            print(f"Error in row {i+1}: {e}")
+
+## Split data (70/30, in accordance with Biddle et Al.)
+hypo_df_train = hypo_df.sample(frac=0.7, random_state=42)
+hypo_df_remains = hypo_df.drop(hypo_df_train.index)
+# Split test data into development and test sets
+hypo_df_test = hypo_df_remains.sample(frac=0.66, random_state=42)
+hypo_df_dev = hypo_df_remains.drop(hypo_df_test.index)
+
+## Write to json files
+
 hypo_df_train.to_json(os.path.join(new_dir, "train.json"), 'records', lines=True)
 hypo_df_test.to_json(os.path.join(new_dir, "test.json"), orient='records', lines=True)
+hypo_df_dev.to_json(os.path.join(new_dir, "devjson"), orient='records', lines=True)
 
-#hypo_df_train.to_csv(os.path.join(new_dir, "train.csv"), index=False)
-#hypo_df_test.to_csv(os.path.join(new_dir, "test.csv"), index=False)
-#hypo_df.to_csv(os.path.join(new_dir, "preprocessed_hypo.csv"), index=False)
+### Write new file with dev set samples for annotation purposes
+
+annotation_indices = hypo_df_dev.index[hypo_df_dev.index < 698]
+annotation_df = corpus.loc[annotation_indices]
+annotation_df.to_csv(os.path.join(new_dir, "annotations.tsv"), sep="\t")
 
 ### Hyperprobe
 

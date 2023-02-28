@@ -75,6 +75,7 @@ dataset_info_dict = {
     "lcc_ru_en": Dataset_info("lcc_ru_en", num_of_spans=1),
     "lcc_es_en": Dataset_info("lcc_es_en", num_of_spans=1),
     "cross_trofi_vua_verb": Dataset_info("cross_trofi_vua_verb", num_of_spans=1),
+    "hypo_en": Dataset_info("hypo_en", num_of_spans=1)
 }
 
 model_checkpoint = sys.argv[1]
@@ -311,6 +312,11 @@ class Dataset_handler:
             self.json_to_dataset('merged.json', data_type="train", keep_order=False, fraction = frac)
             self.json_to_dataset('merged.json', data_type="dev", fraction = 0.01)
             self.json_to_dataset('./edge-probing-datasets/metaphor/lcc/ru/ru_test10_current.json', data_type="test", fraction = frac)
+        elif dataset_info.dataset_name == "hypo_en":
+            frac = 1
+            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False, to_sentence_span=False)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=False)
+            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=False)
         elif dataset_info.dataset_name == "manual":
             frac = 1
             f = open("./manual_dataset.json", "w")
