@@ -68,7 +68,7 @@ dataset_info_dict = {
     "lcc_es_fa": Dataset_info("lcc_es_fa", num_of_spans=1),
     "lcc_es_ru": Dataset_info("lcc_es_ru", num_of_spans=1),
     "lcc_fa_ru": Dataset_info("lcc_fa_ru", num_of_spans=1),
-    "hypo_en": Dataset_info("hypo_en", num_of_spans=1)
+    "hypo_en": Dataset_info("hypo_en", num_of_spans=1, max_span_length=7)
 }
 
 model_checkpoint = sys.argv[1]
@@ -76,11 +76,6 @@ my_dataset_info = dataset_info_dict[sys.argv[2]]
 SEED = int(sys.argv[3])
 
 SEQ2SEQ_MODEL = "t5" in model_checkpoint or "pegasus" in model_checkpoint or "bart" in model_checkpoint
-
-if model_checkpoint == 'google/electra-base-discriminator':
-    pdb.set_trace()
-
-    
 
 def set_seed(seed):
     random.seed(seed)
@@ -99,8 +94,8 @@ else:
     tokenizer.padding_side = 'right'
     model = AutoModel.from_pretrained(model_checkpoint)
 
-model.save_pretrained(model_checkpoint)
-tokenizer.save_pretrained(model_checkpoint)
+#model.save_pretrained(model_checkpoint)
+#tokenizer.save_pretrained(model_checkpoint)
 
 class Utils:
     def one_hot(idx, length):
@@ -295,9 +290,9 @@ class Dataset_handler:
             self.json_to_dataset('./manual_dataset.json', data_type="test", fraction = frac, to_sentence_span=True)
         elif dataset_info.dataset_name == "hypo_en":
             frac = 1
-            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False, to_sentence_span=False)
-            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=False)
-            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=False)
+            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=True)
 
         else:
             throw("Error: Unkown dataset name!")
@@ -434,7 +429,7 @@ class Dataset_handler:
                     if self.dataset_info.num_of_spans == 2:
                         data_list.append({"text": instance["text"],
                                         "span1": target["span1"],
-                                        "span2": target["span2"],
+                                        "span2": target.get("span2"),
                                         "label": str(target["label"]),
                                         "cache_id": self.global_cache_counter})
                     elif self.dataset_info.num_of_spans == 1:
@@ -1429,11 +1424,6 @@ class MDL_probe_trainer(Trainer):
         
         # Save file
         df.to_csv(os.path.join(csv_path, filename),)
-
-
-
-
-
 
 
 my_mdl_probe_trainer = None

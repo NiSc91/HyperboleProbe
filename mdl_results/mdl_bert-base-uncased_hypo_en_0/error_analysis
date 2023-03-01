@@ -1,143 +1,143 @@
 ,text,labels,preds_1,preds_2,preds_3,preds_4,preds_5,preds_6,preds_7,preds_8,preds_9,preds_10,preds_11,preds_12,preds_13
-0,"I now embrace `` Hollywood '' endings , but there was a time when I genuflected to kill-offs .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-1,Our fight has been going on since the beginning of time .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-2,Finding the piece of paper in this chunk of documents is like looking for a needle in a haystack .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-3,I could smell his hellish breath .,1,0,0,1,1,1,1,0,1,1,1,1,1,1
-4,My dog can run faster than a thunderbolt .,1,0,0,0,0,0,1,1,1,1,1,0,0,0
-5,"She is only a puppet , acting on the directives of her friends .",1,0,1,1,1,1,1,1,1,1,1,1,1,1
-6,"Afflicted by an outbreak of fever , they were speaking deliriously .",0,1,1,1,1,1,1,1,1,1,1,1,1,1
-7,The fight continues to bring the neighborhood its own zip code .,0,1,0,1,1,1,0,1,1,0,0,0,0,0
-8,"Move , there 's no time to explain everything now .",0,0,1,1,1,1,1,1,1,1,1,1,1,1
-9,"After the levelling , the summit of the hill dropped by ten metres .",0,1,1,1,0,0,0,0,0,0,0,0,0,0
-10,We were directed to nowhere in particular .,0,1,1,1,1,1,1,1,1,0,1,0,0,0
-11,I can eat about a million calories a year and maintain my weight .,0,0,0,1,1,1,0,0,0,0,0,0,0,0
-12,She ran the whole gamut of emotions .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-13,This is the single most expensive cake in the city .,0,1,1,0,0,1,1,1,1,1,1,1,1,0
-14,Limitation on employment and property ownership were a recipe for disaster in the country .,0,1,0,0,0,1,1,0,1,0,0,0,1,0
-15,"She smiled at me , I almost fell out of my chair .",1,0,1,1,1,1,1,1,1,1,1,1,1,1
-16,This robot can lift a sumo wrestler .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-17,Many Christians are not focusing on heaven .,0,1,1,1,0,0,1,0,0,0,0,0,0,0
-18,The monk said he was lost in a spiritual rapture .,0,1,1,1,1,1,1,0,1,1,1,1,0,1
-19,"At this price , it 's a steal !",1,0,1,0,1,1,1,0,1,1,1,1,1,1
-20,"If you leave me , I 'll erase you .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-21,Having some grass over my dead body sounds good .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-22,Molasses buckets appeared from nowhere .,1,1,1,1,1,1,1,0,1,1,1,1,1,1
-23,The player is undeniably talented .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-24,This is one breathtaking panorama .,1,1,1,0,0,1,1,1,1,1,1,0,1,0
-25,"If this character was a real person , I 'd break every bone in his body .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-26,We can use the force of a typhoon to generate wind power .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-27,Tracey 's kitchen goes up in smoke .,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-28,Knowledge without conscience is but the ruin of the soul .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-29,"In his dreams , Toyland was a place where all the toys lived together .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
-30,Technology annihilates humanity .,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-31,For dinner he would eat a silo full of grain .,1,1,1,1,1,1,0,0,0,0,0,0,0,0
-32,The river runs dry .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-33,And it is a tiny mouthful of heaven .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-34,When the girl lost her puppy she cried an ocean of tears .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-35,I found the collar of the lap dog .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-36,It 's been a lifetime since I found someone nice to me .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-37,"The emperor 's statue is here , throned in blue sky like a sphinx .",0,1,0,0,0,1,0,1,1,0,0,0,0,0
-38,"Getting older helped me clarify the events of my childhood , without exceptions .",1,0,0,0,0,0,1,0,0,0,0,0,0,0
-39,We have n't talked for months .,0,0,0,1,1,1,1,0,1,0,0,0,0,0
-40,Two bars of the gate are sharp like the points of two picks .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-41,I could ride the wave of popularity .,0,0,0,0,0,0,0,0,0,0,0,0,1,0
-42,Children were kept out of the world of adult entertainment .,0,0,1,0,0,0,0,0,0,1,1,1,0,0
-43,I would commit murder to have that new phone !,1,0,0,0,0,0,0,0,1,1,1,1,1,1
-44,She can have any boy that she wants .,1,0,0,0,0,0,0,0,1,0,0,0,1,0
-45,It is intolerable to live without my phone .,1,0,0,0,0,0,0,0,0,1,0,1,1,1
-46,The stone temple was simply colossal .,0,1,0,1,1,1,1,1,1,1,1,1,1,1
-47,The lesson was about the world spinning around its axis .,0,0,0,0,0,0,0,0,1,0,0,0,0,0
-48,Perfection assassinates creativity .,1,0,0,0,0,0,0,0,0,0,0,0,0,0
-49,Johnny worshipped the statue of the reigning ruler .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-50,I forgot what her name is .,0,1,1,1,0,0,0,0,0,0,0,1,1,1
-51,I think her friend is blind .,0,1,1,1,1,1,1,1,1,1,1,1,1,1
-52,The lesson was taking forever .,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-53,These steam seeps provide an oasis of moisture in the desert .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-54,When it brews there is drips of water coming out .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-55,"The town I grew up in is so isolated that rock , paper , scissors is considered a high tech game .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-56,"New hair , new life .",1,1,1,1,1,1,1,1,1,1,1,1,0,0
-57,The god Shiva uses a third eye to see beyond the apparent .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-58,Hydrogen shows the cloud to be light years away from the earth .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-59,He broadens his influence by traveling to different cities .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-60,The murderer was clearly a madman .,0,0,1,0,0,0,0,0,0,0,0,0,0,0
-61,"I am sitting here , throned in blue sky like a sphinx .",1,1,1,1,1,1,1,1,1,1,0,0,0,0
-62,I 've never heard of a hippo with a hernia .,0,0,1,0,1,1,0,0,0,0,0,0,0,0
-63,John 's new idea is a theoretical diamond .,1,1,0,0,1,1,0,0,1,0,0,0,0,0
-64,I am crushed by a corrupt and criminal justice system .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-65,Faith will move mountains .,1,0,1,1,1,1,1,1,1,1,1,1,1,1
-66,I received the transfusion . My father 's blood now floods into my veins .,0,1,1,1,1,1,1,1,1,0,0,0,0,0
-67,I do n't work without coffee : it 's my lifeblood .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-68,The horrors must be stopped everywhere .,0,0,0,0,0,0,0,1,0,0,0,0,0,0
-69,"You stepped on a land mine , boy .",1,1,1,1,1,1,1,1,1,1,1,1,0,1
-70,Being aware of our thoughts is the unmistakable sign that we exist .,0,0,1,1,1,1,1,1,1,1,1,1,1,1
-71,Many brands are sold commercially for far less .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-72,Get a piece of sandpaper and rub it across the section of wood .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-73,They witnessed a paradise revealed on this very same earth .,1,1,1,0,0,0,0,0,1,0,0,0,0,1
-74,He 's a monster .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-75,The gate of the school is made of iron .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-76,The beds were horrid filthy and full of vermin .,0,1,1,1,1,0,1,1,0,0,0,0,0,0
-77,This is honestly the best seasoning salt in all the land .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-78,The strategy may prevent rebellion in the circumstance of some cruel tyrant .,0,1,1,0,0,0,0,0,0,0,0,0,0,0
-79,"He hurts everybody , he has a sharp knife instead of a tongue .",1,1,1,0,0,0,1,1,1,1,0,1,0,1
-80,Having a gorilla in the picture would ruin it .,0,0,0,1,0,0,0,0,0,0,0,0,0,0
-81,The shelves contained crystal clear glasses .,0,1,1,1,1,1,1,0,0,0,0,0,0,0
-82,Satisfaction floods into my veins .,1,0,0,0,0,1,0,1,1,0,1,1,1,0
-83,"The noise was so great , that it was heard in both the countries .",1,0,1,1,0,0,0,0,0,0,0,0,0,0
-84,Chris wonders if there is civilization on the other side of the Universe .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-85,I worked myself to the bone .,1,0,1,1,0,1,1,1,1,1,1,1,1,1
-86,The new shampoo is ten times better than the other .,1,1,0,0,0,0,1,0,0,0,0,0,0,0
-87,"You are not a fully-grown man , you are a clown .",1,0,1,1,1,1,1,1,1,1,1,1,1,1
-88,Johnny worshipped the ground Dallas walked on .,1,0,0,0,0,0,0,0,0,0,0,1,1,1
-89,These answers are what we wanted to hear .,0,0,0,1,0,0,0,1,0,0,1,0,0,0
-90,First relief arrives after eight days .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-91,"You know , the world could end before I 'd let something happen to you .",1,1,1,1,1,1,1,0,1,1,1,1,1,1
-92,The news has been blown out of all proportion .,1,0,0,1,1,1,1,1,1,1,1,1,1,1
-93,"Of the two brothers , the oldest was unquestionably the smartest .",1,1,1,1,1,1,1,1,1,0,1,1,1,1
-94,I 'd rather French kiss a rattlesnake than miss a gym period .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-95,Propane vapor weighs more than air .,0,1,1,0,0,0,0,1,0,0,0,0,0,0
-96,Have you seen the feverish activity in grandma 's kitchen ?,1,0,0,0,1,0,0,0,0,0,0,0,0,0
-97,This year the new fashion trends spread like wildfire .,1,0,0,0,0,0,0,0,1,0,1,1,1,1
-98,The historic building is going to burst into flames .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-99,Anna 's cooking is a force of nature .,1,0,1,1,1,1,1,1,1,1,1,1,1,1
-100,"I could fly and become invisible , so I realized it must be a dream !",0,1,1,1,1,1,1,1,1,1,1,1,1,0
-101,People bend to his will .,1,0,1,1,1,1,1,0,0,0,0,0,0,0
-102,If the relationship becomes intolerable,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-103,Anna cried blood tears before obtaining her bachelor 's degree .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-104,She shows no emotions : she has become an iceberg of a woman .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-105,Invite a seafarer and explore the abyss of the ocean together .,0,1,1,1,1,1,0,1,1,1,0,1,1,1
-106,I would give my possessions for a pot of ale .,1,0,0,0,0,0,0,0,0,0,0,0,1,0
-107,I could live on very limited means .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-108,"When your mother saw you , she was about to pass out from excitement .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-109,"Here he was , in total control .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-110,"Apparently , my fingers are made of butter tonight .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-111,Waxy-eared persons should go to the otolaryngologist .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-112,Big Bang is described as the greatest explosion in the history of the universe .,0,1,0,0,0,0,1,0,0,0,0,0,0,0
-113,So many languages are spoken in the world .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-114,"Since you stopped partying , you 're a nullity .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-115,Commercial airplanes carry a huge tank of oxygen .,0,1,1,1,1,0,0,0,0,0,0,0,0,0
-116,So you are a clown who uses music .,0,0,1,0,0,0,0,0,0,0,0,0,1,1
-117,He tolerated my annoying questions . That man is a saint .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-118,You see caravans delivering loads of water .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-119,You ridiculously disguised as a captain .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-120,Cockroaches are die hard creatures .,0,1,1,1,0,1,1,1,1,1,1,1,1,1
-121,"She has so many watches , she 'd need eight arms to wear them all .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
-122,An anaconda tried to swallow the cow .,0,1,1,1,1,0,0,0,0,0,0,0,0,0
-123,"The story begins with a tempest in a teacup , and sugar cubes transforming into cruise ships .",0,1,0,0,0,0,1,0,0,1,0,1,1,0
-124,This is the first crest to be found on the fossil of a dinosaur .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-125,Music is my daily drug .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-126,I can make the best pesto in the world .,1,1,1,1,1,1,1,1,1,1,1,1,1,0
-127,Sentries were given some bullets .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
-128,The boxer threw a punch in the gut of his opponent .,0,1,0,0,0,1,1,0,0,0,0,0,0,0
-129,On every occasion there was a suicide attempt .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-130,"Sorry , I forgot my head at home .",1,0,1,1,1,1,1,1,1,1,1,1,1,1
-131,The old man is a dinosaur .,1,1,1,0,0,1,1,1,1,1,0,0,0,0
-132,Frank is ready to fly off the continent .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-133,She is sinking in a sea of misery .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-134,People continue to die of starvation .,0,1,0,1,0,0,0,0,0,0,0,0,0,0
-135,Hope deferred makes the heart sick .,1,0,1,0,0,1,1,1,1,1,1,1,1,1
-136,They were in a trance when arguing with that manipulator .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
-137,He used to teach there and used to get harassed by all the pupils .,1,0,1,0,0,0,0,0,0,0,1,1,1,1
-138,Apollo and Adonis are tributes to beauty .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-139,"When my parents enrolled me in college , they basically sentenced me to death .",1,0,0,0,0,0,0,0,0,0,0,0,1,1
-140,Time and experience will make a man of him .,0,1,1,1,1,1,1,1,1,1,1,1,1,1
-141,Granma was a harsh school girl who made kids behave . She was a real paint-remover .,1,1,1,1,1,1,1,1,1,1,1,0,1,0
+0,"I now embrace `` Hollywood '' endings , but there was a time when I genuflected to kill-offs .",0,0,1,0,0,0,0,0,0,0,0,0,0,0
+1,Our fight has been going on since the beginning of time .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+2,Finding the piece of paper in this chunk of documents is like looking for a needle in a haystack .,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+3,I could smell his hellish breath .,0,1,0,0,1,0,0,0,0,0,0,0,0,0
+4,My dog can run faster than a thunderbolt .,0,1,1,1,1,1,0,0,0,0,0,0,0,0
+5,"She is only a puppet , acting on the directives of her friends .",0,0,1,0,1,0,0,0,1,1,0,0,0,0
+6,"Afflicted by an outbreak of fever , they were speaking deliriously .",1,0,1,1,1,1,1,1,1,1,0,1,1,1
+7,The fight continues to bring the neighborhood its own zip code .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+8,"Move , there 's no time to explain everything now .",1,0,0,0,1,0,0,0,0,0,0,0,0,0
+9,"After the levelling , the summit of the hill dropped by ten metres .",1,0,1,1,1,1,1,1,1,1,1,1,1,1
+10,We were directed to nowhere in particular .,1,1,0,0,1,1,1,1,1,1,1,1,1,1
+11,I can eat about a million calories a year and maintain my weight .,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+12,She ran the whole gamut of emotions .,0,1,0,0,0,1,0,0,0,0,0,0,0,0
+13,This is the single most expensive cake in the city .,1,0,1,0,0,0,0,1,0,0,1,0,0,0
+14,Limitation on employment and property ownership were a recipe for disaster in the country .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+15,"She smiled at me , I almost fell out of my chair .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,This robot can lift a sumo wrestler .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+17,Many Christians are not focusing on heaven .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+18,The monk said he was lost in a spiritual rapture .,1,0,0,0,0,1,1,1,0,0,1,1,1,1
+19,"At this price , it 's a steal !",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,"If you leave me , I 'll erase you .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+21,Having some grass over my dead body sounds good .,1,1,1,1,1,1,1,1,0,0,1,1,1,1
+22,Molasses buckets appeared from nowhere .,0,0,1,0,1,1,0,1,1,1,1,1,1,1
+23,The player is undeniably talented .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,This is one breathtaking panorama .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+25,"If this character was a real person , I 'd break every bone in his body .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,We can use the force of a typhoon to generate wind power .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+27,Tracey 's kitchen goes up in smoke .,1,0,0,0,1,0,1,1,1,1,1,1,1,1
+28,Knowledge without conscience is but the ruin of the soul .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+29,"In his dreams , Toyland was a place where all the toys lived together .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
+30,Technology annihilates humanity .,0,1,0,1,1,1,1,1,1,1,1,1,1,1
+31,For dinner he would eat a silo full of grain .,0,1,0,0,0,1,0,1,1,1,1,1,1,1
+32,The river runs dry .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+33,And it is a tiny mouthful of heaven .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,When the girl lost her puppy she cried an ocean of tears .,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+35,I found the collar of the lap dog .,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+36,It 's been a lifetime since I found someone nice to me .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,"The emperor 's statue is here , throned in blue sky like a sphinx .",1,1,1,1,1,1,1,1,0,1,1,1,1,1
+38,"Getting older helped me clarify the events of my childhood , without exceptions .",0,1,0,1,1,1,1,1,1,1,1,1,1,1
+39,We have n't talked for months .,1,0,1,0,0,1,1,0,1,1,0,0,0,1
+40,Two bars of the gate are sharp like the points of two picks .,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+41,I could ride the wave of popularity .,1,0,1,0,0,0,0,0,0,0,1,1,0,1
+42,Children were kept out of the world of adult entertainment .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+43,I would commit murder to have that new phone !,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+44,She can have any boy that she wants .,0,0,0,0,1,0,0,0,1,0,0,0,0,1
+45,It is intolerable to live without my phone .,0,1,1,0,0,0,0,0,0,0,0,0,0,0
+46,The stone temple was simply colossal .,1,1,1,1,0,1,0,0,0,0,0,1,1,1
+47,The lesson was about the world spinning around its axis .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+48,Perfection assassinates creativity .,0,0,0,0,0,0,0,0,0,0,0,1,1,1
+49,Johnny worshipped the statue of the reigning ruler .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+50,I forgot what her name is .,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+51,I think her friend is blind .,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+52,The lesson was taking forever .,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+53,These steam seeps provide an oasis of moisture in the desert .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+54,When it brews there is drips of water coming out .,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+55,"The town I grew up in is so isolated that rock , paper , scissors is considered a high tech game .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,"New hair , new life .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+57,The god Shiva uses a third eye to see beyond the apparent .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+58,Hydrogen shows the cloud to be light years away from the earth .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+59,He broadens his influence by traveling to different cities .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+60,The murderer was clearly a madman .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+61,"I am sitting here , throned in blue sky like a sphinx .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,I 've never heard of a hippo with a hernia .,1,0,0,0,0,0,1,1,1,1,1,1,1,1
+63,John 's new idea is a theoretical diamond .,0,0,0,0,1,0,1,1,1,1,1,1,0,1
+64,I am crushed by a corrupt and criminal justice system .,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+65,Faith will move mountains .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+66,I received the transfusion . My father 's blood now floods into my veins .,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+67,I do n't work without coffee : it 's my lifeblood .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+68,The horrors must be stopped everywhere .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+69,"You stepped on a land mine , boy .",0,0,1,1,1,0,1,0,0,0,0,0,0,0
+70,Being aware of our thoughts is the unmistakable sign that we exist .,1,0,0,0,1,0,1,1,1,0,1,1,1,1
+71,Many brands are sold commercially for far less .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+72,Get a piece of sandpaper and rub it across the section of wood .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+73,They witnessed a paradise revealed on this very same earth .,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+74,He 's a monster .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+75,The gate of the school is made of iron .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+76,The beds were horrid filthy and full of vermin .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+77,This is honestly the best seasoning salt in all the land .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+78,The strategy may prevent rebellion in the circumstance of some cruel tyrant .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+79,"He hurts everybody , he has a sharp knife instead of a tongue .",0,0,0,0,0,0,0,0,1,0,0,0,0,0
+80,Having a gorilla in the picture would ruin it .,1,1,1,1,1,1,0,1,0,1,1,1,1,1
+81,The shelves contained crystal clear glasses .,1,1,1,1,1,1,0,1,1,1,1,1,1,1
+82,Satisfaction floods into my veins .,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+83,"The noise was so great , that it was heard in both the countries .",0,0,0,0,1,0,1,1,1,1,1,1,1,1
+84,Chris wonders if there is civilization on the other side of the Universe .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+85,I worked myself to the bone .,0,1,1,1,1,1,1,1,0,0,0,0,0,0
+86,The new shampoo is ten times better than the other .,0,1,1,1,1,1,1,1,1,1,1,1,0,0
+87,"You are not a fully-grown man , you are a clown .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,Johnny worshipped the ground Dallas walked on .,0,1,1,1,1,1,1,1,0,1,0,0,0,1
+89,These answers are what we wanted to hear .,1,1,0,1,1,0,1,1,1,0,0,0,0,1
+90,First relief arrives after eight days .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+91,"You know , the world could end before I 'd let something happen to you .",0,0,0,1,1,1,0,0,0,0,0,0,0,0
+92,The news has been blown out of all proportion .,0,1,1,1,1,1,1,0,0,0,0,1,0,1
+93,"Of the two brothers , the oldest was unquestionably the smartest .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+94,I 'd rather French kiss a rattlesnake than miss a gym period .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,Propane vapor weighs more than air .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+96,Have you seen the feverish activity in grandma 's kitchen ?,0,0,0,0,0,0,1,1,1,1,0,0,0,0
+97,This year the new fashion trends spread like wildfire .,0,0,1,1,1,1,1,1,1,1,1,1,1,1
+98,The historic building is going to burst into flames .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+99,Anna 's cooking is a force of nature .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+100,"I could fly and become invisible , so I realized it must be a dream !",1,0,0,0,1,1,1,1,1,1,1,1,1,1
+101,People bend to his will .,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+102,If the relationship becomes intolerable,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+103,Anna cried blood tears before obtaining her bachelor 's degree .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+104,She shows no emotions : she has become an iceberg of a woman .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+105,Invite a seafarer and explore the abyss of the ocean together .,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+106,I would give my possessions for a pot of ale .,0,0,0,1,1,1,1,1,1,1,1,1,1,1
+107,I could live on very limited means .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+108,"When your mother saw you , she was about to pass out from excitement .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+109,"Here he was , in total control .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+110,"Apparently , my fingers are made of butter tonight .",0,1,0,0,0,0,0,0,0,0,0,0,0,0
+111,Waxy-eared persons should go to the otolaryngologist .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+112,Big Bang is described as the greatest explosion in the history of the universe .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+113,So many languages are spoken in the world .,1,0,0,0,1,1,1,1,1,1,1,1,1,1
+114,"Since you stopped partying , you 're a nullity .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+115,Commercial airplanes carry a huge tank of oxygen .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+116,So you are a clown who uses music .,1,0,0,0,0,0,0,0,0,0,0,0,0,1
+117,He tolerated my annoying questions . That man is a saint .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+118,You see caravans delivering loads of water .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+119,You ridiculously disguised as a captain .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+120,Cockroaches are die hard creatures .,1,1,1,1,0,0,0,0,0,0,0,0,0,0
+121,"She has so many watches , she 'd need eight arms to wear them all .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+122,An anaconda tried to swallow the cow .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+123,"The story begins with a tempest in a teacup , and sugar cubes transforming into cruise ships .",1,0,0,1,1,1,1,1,1,1,1,1,1,0
+124,This is the first crest to be found on the fossil of a dinosaur .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+125,Music is my daily drug .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+126,I can make the best pesto in the world .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+127,Sentries were given some bullets .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+128,The boxer threw a punch in the gut of his opponent .,1,1,1,1,1,1,1,1,1,1,1,1,0,1
+129,On every occasion there was a suicide attempt .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+130,"Sorry , I forgot my head at home .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+131,The old man is a dinosaur .,0,0,0,0,1,1,1,1,1,1,0,1,1,1
+132,Frank is ready to fly off the continent .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+133,She is sinking in a sea of misery .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+134,People continue to die of starvation .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+135,Hope deferred makes the heart sick .,0,1,1,0,1,1,0,1,0,0,0,0,0,0
+136,They were in a trance when arguing with that manipulator .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+137,He used to teach there and used to get harassed by all the pupils .,0,1,1,1,1,1,1,1,1,1,1,1,0,0
+138,Apollo and Adonis are tributes to beauty .,1,1,1,1,1,1,1,0,1,1,1,1,1,1
+139,"When my parents enrolled me in college , they basically sentenced me to death .",0,0,0,0,0,0,1,1,1,1,0,0,0,0
+140,Time and experience will make a man of him .,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+141,Granma was a harsh school girl who made kids behave . She was a real paint-remover .,0,0,0,0,0,0,0,0,0,0,0,0,0,0

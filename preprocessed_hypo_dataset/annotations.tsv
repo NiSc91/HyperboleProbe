@@ -1,14 +1,14 @@
-	HYPO	PARAPHRASES	MINIMAL UNITS CORPUS	SCALE	AUX_FIG	POSSIB	CONV
-4	Marriage is the grave of love.	Marriage is the end of love.	I have gone to visit the grave of a friend.	qual	sdom	nposs	nconv
-14	The argument with my bestfriend turned into a tempest in a teacup.	The argument with my bestfriend turned into a fight.	The story begins with a tempest in a teacup, and sugar cubes transforming into cruise ships.	qual	sdom	nposs	nconv
-19	You'll devour the book in a couple of days.  	You'll read the book in a couple of days.	Tuna devour small fish.	qual	sdom	nposs	nconv
-34	My sisters mean more than air to me. 	My sisters mean a lot to me.	Propane vapor weighs more than air.	quant	pdom	poss	conv
-35	Moms are more powerful than the sea. 	Moms are so powerful.	The sky is unforgiving for computation mistakes, more than the sea.	quant	pdom	nposs	nconv
-64	Nothing's impossible!  	Most things are possible!	Nothing is impossible in a child's imagination.	quant	pdom	nposs	conv
-68	Supernatural courage is needed when bringing a message to a hostile audience. 	A great courage is needed when bringing a message to a hostile audience.	Evolutionists gave a natural origin to human institutions instead of a supernatural origin.	qual	sdom	nposs	nconv
-98	I know this place like the back of my hand. 	I know this place very well.	Your baby is already hairy like the back of my hand.	quant	pdom	poss	conv
-99	He's a wrecking ball for the future of the Party. 	He could damage the future of the party.	The structures can be demolished with a wrecking ball.	qual	sdom	nposs	nconv
-119	They were probably hoping to crucify me in front of the whole world.  	They were probably hoping to punish me in front of the people.	"They shouted ""Crucify him!"" with the whole world's sin upon his back."	qual	sdom	poss	conv
+	HYPO	PARAPHRASES	MINIMAL UNITS CORPUS
+4	Marriage is the grave of love.	Marriage is the end of love.	I have gone to visit the grave of a friend.
+14	The argument with my bestfriend turned into a tempest in a teacup.	The argument with my bestfriend turned into a fight.	The story begins with a tempest in a teacup, and sugar cubes transforming into cruise ships.
+19	You'll devour the book in a couple of days.  	You'll read the book in a couple of days.	Tuna devour small fish.
+34	My sisters mean more than air to me. 	My sisters mean a lot to me.	Propane vapor weighs more than air.
+35	Moms are more powerful than the sea. 	Moms are so powerful.	The sky is unforgiving for computation mistakes, more than the sea.
+64	Nothing's impossible!  	Most things are possible!	Nothing is impossible in a child's imagination.
+68	Supernatural courage is needed when bringing a message to a hostile audience. 	A great courage is needed when bringing a message to a hostile audience.	Evolutionists gave a natural origin to human institutions instead of a supernatural origin.
+98	I know this place like the back of my hand. 	I know this place very well.	Your baby is already hairy like the back of my hand.
+99	He's a wrecking ball for the future of the Party. 	He could damage the future of the party.	The structures can be demolished with a wrecking ball.
+119	They were probably hoping to crucify me in front of the whole world.  	They were probably hoping to punish me in front of the people.	"They shouted ""Crucify him!"" with the whole world's sin upon his back."
 122	So much snow that it's like walking in the firmament.  	So much snow that it's like walking on a soft ground.	Some stars in the firmament have a name.
 127	It is a truth universally acknowledged that a single man in possession of a fortune must be in want of a wife.	It is a truth widely acknowledged that a single man in possession of a fortune must be in want of a wife.	It is a truth universally acknowledged that crying is a sign of sadness.
 149	Your body is a wonderland.  	Your body is beautiful.	Carrol invented a wonderland with different logical rules.

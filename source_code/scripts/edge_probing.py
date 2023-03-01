@@ -75,7 +75,7 @@ dataset_info_dict = {
     "lcc_ru_en": Dataset_info("lcc_ru_en", num_of_spans=1),
     "lcc_es_en": Dataset_info("lcc_es_en", num_of_spans=1),
     "cross_trofi_vua_verb": Dataset_info("cross_trofi_vua_verb", num_of_spans=1),
-    "hypo_en": Dataset_info("hypo_en", num_of_spans=1)
+    "hypo_en": Dataset_info("hypo_en", num_of_spans=1, max_span_length=7)
 }
 
 model_checkpoint = sys.argv[1]
@@ -314,9 +314,9 @@ class Dataset_handler:
             self.json_to_dataset('./edge-probing-datasets/metaphor/lcc/ru/ru_test10_current.json', data_type="test", fraction = frac)
         elif dataset_info.dataset_name == "hypo_en":
             frac = 1
-            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False, to_sentence_span=False)
-            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=False)
-            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=False)
+            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=True)
         elif dataset_info.dataset_name == "manual":
             frac = 1
             f = open("./manual_dataset.json", "w")
@@ -1320,6 +1320,11 @@ class Edge_probe_trainer(Trainer):
         print('[%d] loss: %.4f, val_loss: %.4f, test_loss: %.4f' % (epoch, self.history["loss"]["train"][-1], self.history["loss"]["dev"][-1], self.history["loss"]["test"][-1]))
 
     def draw_weights(self, epoch=0):
+        # Save figures
+        fig_path = os.path.join("edge_probing_results", "edge"+"_"+model_checkpoint+"_"+self.dataset_handler.dataset_info.dataset_name+"_"+str(SEED))
+        if not os.path.exists(fig_path):
+            os.mkdir(fig_path)
+
         if(epoch % 1 == 0):
             # w = self.edge_probe_model.weighing_params.tolist()
             w = torch.nn.functional.softmax(self.edge_probe_model.weighing_params).cpu().detach().numpy()
@@ -1328,7 +1333,8 @@ class Edge_probe_trainer(Trainer):
             plt.bar(np.arange(len(w), dtype=int), w)
             plt.ylabel('Weight')
             plt.xlabel('Layer');
-            plt.show()
+            plt.savefig(os.path.join(fig_path, 'plot1.jpg'))
+            plt.close()
 
             wsoft = nn.functional.softmax(self.edge_probe_model.weighing_params)
             print("CG", sum(idx*val for idx, val in enumerate(wsoft)))
@@ -1340,7 +1346,8 @@ class Edge_probe_trainer(Trainer):
             plt.plot(x, loss_history["dev"])
             plt.plot(x, loss_history["test"])
             plt.legend(['Train', 'Dev', 'Test'], loc='lower left')
-            plt.show()
+            plt.savefig(os.path.join(fig_path, 'plot2.jpg'))
+            plt.close()
 
             print("Micro f1 History")
             f1_history = self.history["metrics"]["micro_f1"]
@@ -1348,7 +1355,8 @@ class Edge_probe_trainer(Trainer):
             plt.plot(x, f1_history["dev"])
             plt.plot(x, f1_history["test"])
             plt.legend(['Dev', 'Test'], loc='upper left')
-            plt.show()
+            plt.savefig(os.path.join(fig_path, 'plot3.jpg'))
+            plt.close()
 
     def analyze_attention(self, dataset_part="train", row_idx=0, new_text = None):
         if new_text is not None:

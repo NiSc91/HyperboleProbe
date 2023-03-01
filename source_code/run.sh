@@ -9,16 +9,21 @@ export EDGE_CODE
 #python $EDGE_CODE bert-base-uncased-random-weights trofi 0
 #python $EDGE_CODE bert-base-uncased-random-weights vua_verb 0
 #python $EDGE_CODE bert-base-uncased-random-weights vua_pos 0
+#python $EDGE_CODE bert-base-uncased-random-weights hypo_en 0
+python $EDGE_CODE bert-base-uncased hypo_en 0
+python $EDGE_CODE roberta-base hypo_en 0
 
 #python $EDGE_CODE bert-base-uncased-random-weights lcc 1
 #python $EDGE_CODE bert-base-uncased-random-weights trofi 1
 #python $EDGE_CODE bert-base-uncased-random-weights vua_verb 1
 #python $EDGE_CODE bert-base-uncased-random-weights vua_pos 1
+#python $EDGE_CODE bert-base-uncased-random-weights hypo_en 1
 
 #python $EDGE_CODE bert-base-uncased-random-weights lcc 2
 #python $EDGE_CODE bert-base-uncased-random-weights trofi 2
 #python $EDGE_CODE bert-base-uncased-random-weights vua_verb 2
 #python $EDGE_CODE bert-base-uncased-random-weights vua_pos 2
+#python $EDGE_CODE bert-base-uncased-random-weights hypo_en 1
 
 #python $MDL_CODE bert-base-uncased lcc 0
 #python $MDL_CODE bert-base-uncased trofi 0
@@ -36,11 +41,11 @@ python $MDL_CODE roberta-base hypo_en 0
 #python3 $MDL_CODE google/electra-base-discriminator trofi 0
 #python3 $MDL_CODE google/electra-base-discriminator vua_pos 0
 #python3 $MDL_CODE google/electra-base-discriminator vua_verb 0
-python $MDL_CODE google/electra-base-discriminator hypo_en 0
+#python $MDL_CODE google/electra-base-discriminator hypo_en 0
 
 #python $MDL_CODE bert-base-uncased-random-weights lcc 0
 #python $MDL_CODE bert-base-uncased-random-weights trofi 0
 #python $MDL_CODE bert-base-uncased-random-weights vua_verb 0
 #python $MDL_CODE bert-base-uncased-random-weights vua_pos 0
-python $MDL_CODE bert-base-uncased-random-weights hypo_en 0
+#python $MDL_CODE bert-base-uncased-random-weights hypo_en 0
 #python $MDL_CODE roberta-base-random-weights hypo_en 0
