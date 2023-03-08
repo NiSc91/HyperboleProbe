@@ -132,7 +132,7 @@ hypo_df_dev = hypo_df_remains.drop(hypo_df_test.index)
 
 hypo_df_train.to_json(os.path.join(new_dir, "train.json"), 'records', lines=True)
 hypo_df_test.to_json(os.path.join(new_dir, "test.json"), orient='records', lines=True)
-hypo_df_dev.to_json(os.path.join(new_dir, "devjson"), orient='records', lines=True)
+hypo_df_dev.to_json(os.path.join(new_dir, "dev.json"), orient='records', lines=True)
 
 ### Write new file with dev set samples for annotation purposes
 
@@ -151,3 +151,6 @@ annotation_df.to_csv(os.path.join(new_dir, "annotations.tsv"), sep="\t")
 #new_probe_df = pd.DataFrame(column_names)
 #new_probe_df['text'] = probe_df.text
 #new_probe_df['label'] = probe_df.label
+
+span_list = [hypo_df.targets[i][0]['span1'] for i in range(len(hypo_df))]
+span_len = [s[1]-s[0] for s in span_list]

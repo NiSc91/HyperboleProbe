@@ -60,7 +60,7 @@
 {"text":"I wear my favourite t-shirt day in day out .","targets":[{"span1":[5,9],"span_word":"day in day out","label":"nonliteral"}]}
 {"text":"Poor people here are living on bread and water .","targets":[{"span1":[4,9],"span_word":"living bread water","label":"literal"}]}
 {"text":"Dad went ballistic when he saw the dent in his car .","targets":[{"span1":[2,3],"span_word":"ballistic","label":"nonliteral"}]}
-{"text":"It 's painful to see you eating pineapple pizza . It hurts my Italian heart .","targets":[{"span1":[2,3],"span2":[11,12],"span_word":"painful hurts","label":"nonliteral"}]}
+{"text":"It 's painful to see you eating pineapple pizza . It hurts my Italian heart .","targets":[{"span1":[2,3],"span_word":"painful","label":"nonliteral"}]}
 {"text":"I am fascinated by the construction , whether it is a marionette or a doll .","targets":[{"span1":[11,12],"span_word":"marionette","label":"literal"}]}
 {"text":"The pilot was fatally wounded .","targets":[{"span1":[3,5],"span_word":"fatally wounded","label":"literal"}]}
 {"text":"When the last light set , it was like the whole world stopped .","targets":[{"span1":[10,13],"span_word":"whole world stopped","label":"nonliteral"}]}
@@ -187,7 +187,7 @@
 {"text":"Each of these girls is a perfect porcelain doll .","targets":[{"span1":[6,9],"span_word":"perfect porcelain doll","label":"nonliteral"}]}
 {"text":"I 'm so thirsty that I would drink a river .","targets":[{"span1":[7,10],"span_word":"drink river","label":"nonliteral"}]}
 {"text":"I 've had to reinvent myself from the ruins of my choices .","targets":[{"span1":[8,9],"span_word":"ruins","label":"nonliteral"}]}
-{"text":"Speech is silver , but silence is golden .","targets":[{"span1":[2,3],"span2":[7,8],"span_word":"silver golden","label":"nonliteral"}]}
+{"text":"Speech is silver , but silence is golden .","targets":[{"span1":[7,8],"span_word":"golden","label":"nonliteral"}]}
 {"text":"College students eat crap .","targets":[{"span1":[3,4],"span_word":"crap","label":"nonliteral"}]}
 {"text":"His shout could split rocks .","targets":[{"span1":[2,5],"span_word":"could split rocks","label":"nonliteral"}]}
 {"text":"A bat could n't see the pole , so he flew away .","targets":[{"span1":[1,5],"span_word":"bat could n't see","label":"literal"}]}

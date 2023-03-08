@@ -314,12 +314,12 @@ class Dataset_handler:
             self.json_to_dataset('./edge-probing-datasets/metaphor/lcc/ru/ru_test10_current.json', data_type="test", fraction = frac)
         elif dataset_info.dataset_name == "hypo_en":
             frac = 1
-            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, to_sentence_span=True)
-            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=True)
-            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac)
+            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac)
         elif dataset_info.dataset_name == "manual":
             frac = 1
-            f = open("./manual_dataset.json", "w")
+            f = open("./manual_dataset.json", "w")  
             f.write('{"text": "' + dataset_info.manual_text + '", "targets": [{"span1": [0, 0], "label": "' + my_dataset_handler.labels_list[0] + '"}]}')
             f.write('\n{"text": "' + dataset_info.manual_text + '", "targets": [{"span1": [0, 0], "label": "' + my_dataset_handler.labels_list[1] + '"}]}')
             f.close()
@@ -511,11 +511,17 @@ def tokenize_and_one_hot(examples, **fn_kwargs):
         if start_word_id not in word_ids:
             print("Warning: There is no", start_word_id, "in", word_ids, examples["text"].split(), examples["label"])
             start_word_id -= 1
-        span[0] = word_ids.index(start_word_id)  # First occurance
+        try:
+            span[0] = word_ids.index(start_word_id)  # First occurance
+        except ValueError as v:
+            pdb.post_mortem()
         if end_word_id - 1 not in word_ids[::-1]:
             print("Warning: There is no", end_word_id - 1, "in", word_ids, examples["text"].split(), examples["label"])
             end_word_id -= 1
-        span[1] = len(word_ids) - 1 - word_ids[::-1].index(end_word_id - 1) + 1  # Last occurance (+1 for open range)
+        try:
+            span[1] = len(word_ids) - 1 - word_ids[::-1].index(end_word_id - 1) + 1  # Last occurance (+1 for open range)
+        except ValueError as v:
+            pdb.post_mortem()
         return span
 
     # tokenized_inputs["span1"] = [0, 0]
@@ -1415,4 +1421,4 @@ print("Dataset:", my_dataset_info.dataset_name)
 print(f"Batch Size: {BATCH_SIZE}")
 a = my_edge_probe_trainer.edge_probe_model.summary(do_print=True)
 
-my_edge_probe_trainer.train(batch_size = BATCH_SIZE, epochs=30)
+my_edge_probe_trainer.train(batch_size = BATCH_SIZE, epochs=20)

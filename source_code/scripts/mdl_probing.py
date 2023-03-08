@@ -290,9 +290,9 @@ class Dataset_handler:
             self.json_to_dataset('./manual_dataset.json', data_type="test", fraction = frac, to_sentence_span=True)
         elif dataset_info.dataset_name == "hypo_en":
             frac = 1
-            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, to_sentence_span=True)
-            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=True)
-            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac)
+            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac)
 
         else:
             throw("Error: Unkown dataset name!")

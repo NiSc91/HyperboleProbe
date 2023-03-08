@@ -1,142 +1,142 @@
-{"text":"You know , the world could end before I 'd let something happen to you .","targets":[{"span1":[4,7],"span_word":"world could end","label":"nonliteral"}]}
-{"text":"He hurts everybody , he has a sharp knife instead of a tongue .","targets":[{"span1":[7,10],"span_word":"sharp knife instead","label":"nonliteral"}]}
-{"text":"Technology annihilates humanity .","targets":[{"span1":[1,2],"span_word":"annihilates","label":"nonliteral"}]}
-{"text":"Faith will move mountains .","targets":[{"span1":[2,4],"span_word":"move mountains","label":"nonliteral"}]}
-{"text":"The noise was so great , that it was heard in both the countries .","targets":[{"span1":[13,14],"span_word":"countries","label":"nonliteral"}]}
-{"text":"You are not a fully-grown man , you are a clown .","targets":[{"span1":[10,11],"span_word":"clown","label":"nonliteral"}]}
-{"text":"I do n't work without coffee : it 's my lifeblood .","targets":[{"span1":[8,11],"span_word":"'s lifeblood","label":"nonliteral"}]}
-{"text":"She is only a puppet , acting on the directives of her friends .","targets":[{"span1":[4,5],"span_word":"puppet","label":"nonliteral"}]}
-{"text":"She ran the whole gamut of emotions .","targets":[{"span1":[3,5],"span_word":"whole gamut","label":"nonliteral"}]}
-{"text":"He used to teach there and used to get harassed by all the pupils .","targets":[{"span1":[9,10],"span_word":"harassed","label":"nonliteral"}]}
-{"text":"And it is a tiny mouthful of heaven .","targets":[{"span1":[7,8],"span_word":"heaven","label":"nonliteral"}]}
-{"text":"He 's a monster .","targets":[{"span1":[3,4],"span_word":"monster","label":"nonliteral"}]}
-{"text":"You stepped on a land mine , boy .","targets":[{"span1":[4,6],"span_word":"land mine","label":"nonliteral"}]}
-{"text":"The town I grew up in is so isolated that rock , paper , scissors is considered a high tech game .","targets":[{"span1":[18,21],"span_word":"high tech game","label":"nonliteral"}]}
+{"text":"Marriage is the grave of love .","targets":[{"span1":[3,4],"span_word":"grave","label":"nonliteral"}]}
+{"text":"The argument with my bestfriend turned into a tempest in a teacup .","targets":[{"span1":[8,12],"span_word":"tempest teacup","label":"nonliteral"}]}
+{"text":"You 'll devour the book in a couple of days .","targets":[{"span1":[2,3],"span_word":"devour","label":"nonliteral"}]}
+{"text":"My sisters mean more than air to me .","targets":[{"span1":[3,6],"span_word":"more than air","label":"nonliteral"}]}
+{"text":"Moms are more powerful than the sea .","targets":[{"span1":[6,7],"span_word":"sea","label":"nonliteral"}]}
+{"text":"Nothing 's impossible !","targets":[{"span1":[0,3],"span_word":"nothing 's impossible","label":"nonliteral"}]}
+{"text":"Supernatural courage is needed when bringing a message to a hostile audience .","targets":[{"span1":[0,1],"span_word":"supernatural","label":"nonliteral"}]}
+{"text":"I know this place like the back of my hand .","targets":[{"span1":[4,10],"span_word":"like back hand","label":"nonliteral"}]}
+{"text":"He 's a wrecking ball for the future of the Party .","targets":[{"span1":[3,5],"span_word":"wrecking ball","label":"nonliteral"}]}
+{"text":"They were probably hoping to crucify me in front of the whole world .","targets":[{"span1":[5,6],"span2":[11,13],"span_word":"crucify","label":"nonliteral"}]}
+{"text":"So much snow that it 's like walking in the firmament .","targets":[{"span1":[10,11],"span_word":"firmament","label":"nonliteral"}]}
+{"text":"It is a truth universally acknowledged that a single man in possession of a fortune must be in want of a wife .","targets":[{"span1":[3,6],"span_word":"truth universally acknowledged","label":"nonliteral"}]}
+{"text":"Your body is a wonderland .","targets":[{"span1":[4,5],"span_word":"wonderland","label":"nonliteral"}]}
+{"text":"Sometimes , ignorance is bliss .","targets":[{"span1":[4,5],"span_word":"bliss","label":"nonliteral"}]}
+{"text":"Your speech evokes a thousand sympathies .","targets":[{"span1":[4,5],"span_word":"thousand","label":"nonliteral"}]}
+{"text":"These are the proofs of the invincible smartness of the human race .","targets":[{"span1":[6,7],"span_word":"invincible","label":"nonliteral"}]}
+{"text":"When everyone went home for holidays , the campus became a ghost town .","targets":[{"span1":[11,13],"span_word":"ghost town","label":"nonliteral"}]}
+{"text":"Be silent as a ninja .","targets":[{"span1":[4,5],"span_word":"ninja","label":"nonliteral"}]}
+{"text":"I do not breathe without you .","targets":[{"span1":[3,5],"span_word":"breathe without","label":"nonliteral"}]}
+{"text":"Better be out of the world than out of the fashion .","targets":[{"span1":[2,6],"span_word":"out of the world","label":"nonliteral"}]}
+{"text":"My tongue is a piece of sandpaper .","targets":[{"span1":[4,7],"span_word":"piece sandpaper","label":"nonliteral"}]}
+{"text":"And your father and I worked on those plans together , for months and months and months .","targets":[{"span1":[12,17],"span_word":"months months months","label":"nonliteral"}]}
+{"text":"I 'm quite imperturbable , only UFO can rock me .","targets":[{"span1":[6,7],"span_word":"ufo","label":"nonliteral"}]}
+{"text":"I can conquer the world with you by my side .","targets":[{"span1":[2,5],"span_word":"conquer world","label":"nonliteral"}]}
+{"text":"Starting from today , I 'm a brand new person .","targets":[{"span1":[7,9],"span_word":"brand new","label":"nonliteral"}]}
 {"text":"I would give my possessions for a pot of ale .","targets":[{"span1":[2,5],"span_word":"give possessions","label":"nonliteral"}]}
-{"text":"I am sitting here , throned in blue sky like a sphinx .","targets":[{"span1":[7,10],"span_word":"blue sky like","label":"nonliteral"}]}
-{"text":"Finding the piece of paper in this chunk of documents is like looking for a needle in a haystack .","targets":[{"span1":[15,16],"span_word":"needle","label":"nonliteral"}]}
-{"text":"I worked myself to the bone .","targets":[{"span1":[5,6],"span_word":"bone","label":"nonliteral"}]}
-{"text":"If this character was a real person , I 'd break every bone in his body .","targets":[{"span1":[10,13],"span_word":"break every bone","label":"nonliteral"}]}
-{"text":"When your mother saw you , she was about to pass out from excitement .","targets":[{"span1":[10,11],"span_word":"pass","label":"nonliteral"}]}
-{"text":"She has so many watches , she 'd need eight arms to wear them all .","targets":[{"span1":[7,11],"span_word":"'d need eight arms","label":"nonliteral"}]}
-{"text":"They were in a trance when arguing with that manipulator .","targets":[{"span1":[4,5],"span_word":"trance","label":"nonliteral"}]}
-{"text":"My dog can run faster than a thunderbolt .","targets":[{"span1":[7,8],"span_word":"thunderbolt","label":"nonliteral"}]}
-{"text":"This year the new fashion trends spread like wildfire .","targets":[{"span1":[6,9],"span_word":"spread like wildfire","label":"nonliteral"}]}
-{"text":"At this price , it 's a steal !","targets":[{"span1":[7,8],"span_word":"steal","label":"nonliteral"}]}
-{"text":"Music is my daily drug .","targets":[{"span1":[3,5],"span_word":"daily drug","label":"nonliteral"}]}
-{"text":"The player is undeniably talented .","targets":[{"span1":[3,4],"span_word":"undeniably","label":"nonliteral"}]}
-{"text":"For dinner he would eat a silo full of grain .","targets":[{"span1":[6,8],"span_word":"silo full","label":"nonliteral"}]}
-{"text":"Of the two brothers , the oldest was unquestionably the smartest .","targets":[{"span1":[8,9],"span_word":"unquestionably","label":"nonliteral"}]}
-{"text":"Here he was , in total control .","targets":[{"span1":[5,6],"span_word":"total","label":"nonliteral"}]}
-{"text":"She can have any boy that she wants .","targets":[{"span1":[4,5],"span_word":"boy","label":"nonliteral"}]}
-{"text":"Anna 's cooking is a force of nature .","targets":[{"span1":[5,8],"span_word":"force nature","label":"nonliteral"}]}
-{"text":"She shows no emotions : she has become an iceberg of a woman .","targets":[{"span1":[9,10],"span_word":"iceberg","label":"nonliteral"}]}
-{"text":"She smiled at me , I almost fell out of my chair .","targets":[{"span1":[7,12],"span_word":"fell chair","label":"nonliteral"}]}
-{"text":"The news has been blown out of all proportion .","targets":[{"span1":[4,9],"span_word":"blown proportion","label":"nonliteral"}]}
-{"text":"Have you seen the feverish activity in grandma 's kitchen ?","targets":[{"span1":[4,5],"span_word":"feverish","label":"nonliteral"}]}
-{"text":"Hope deferred makes the heart sick .","targets":[{"span1":[4,6],"span_word":"heart sick","label":"nonliteral"}]}
-{"text":"I can make the best pesto in the world .","targets":[{"span1":[4,9],"span_word":"best world","label":"nonliteral"}]}
-{"text":"The new shampoo is ten times better than the other .","targets":[{"span1":[4,7],"span_word":"ten times better","label":"nonliteral"}]}
-{"text":"Sorry , I forgot my head at home .","targets":[{"span1":[5,6],"span_word":"head","label":"nonliteral"}]}
-{"text":"John 's new idea is a theoretical diamond .","targets":[{"span1":[7,8],"span_word":"diamond","label":"nonliteral"}]}
-{"text":"This is honestly the best seasoning salt in all the land .","targets":[{"span1":[10,11],"span_word":"land","label":"nonliteral"}]}
-{"text":"Satisfaction floods into my veins .","targets":[{"span1":[1,5],"span_word":"floods veins","label":"nonliteral"}]}
-{"text":"When the girl lost her puppy she cried an ocean of tears .","targets":[{"span1":[9,10],"span_word":"ocean","label":"nonliteral"}]}
-{"text":"Knowledge without conscience is but the ruin of the soul .","targets":[{"span1":[6,7],"span_word":"ruin","label":"nonliteral"}]}
-{"text":"I now embrace `` Hollywood '' endings , but there was a time when I genuflected to kill-offs .","targets":[{"span1":[15,16],"span_word":"genuflected","label":"nonliteral"}]}
-{"text":"They witnessed a paradise revealed on this very same earth .","targets":[{"span1":[3,4],"span_word":"paradise","label":"nonliteral"}]}
-{"text":"Granma was a harsh school girl who made kids behave . She was a real paint-remover .","targets":[{"span1":[14,16],"span_word":"real paint-remover","label":"nonliteral"}]}
-{"text":"The lesson was taking forever .","targets":[{"span1":[4,5],"span_word":"forever","label":"nonliteral"}]}
-{"text":"Apparently , my fingers are made of butter tonight .","targets":[{"span1":[5,8],"span_word":"made butter","label":"nonliteral"}]}
-{"text":"It is intolerable to live without my phone .","targets":[{"span1":[2,3],"span_word":"intolerable","label":"nonliteral"}]}
-{"text":"Getting older helped me clarify the events of my childhood , without exceptions .","targets":[{"span1":[11,13],"span_word":"without exceptions","label":"nonliteral"}]}
-{"text":"I am crushed by a corrupt and criminal justice system .","targets":[{"span1":[2,3],"span_word":"crushed","label":"nonliteral"}]}
-{"text":"Johnny worshipped the ground Dallas walked on .","targets":[{"span1":[0,2],"span_word":"johnny worshipped","label":"nonliteral"}]}
-{"text":"It 's been a lifetime since I found someone nice to me .","targets":[{"span1":[4,5],"span_word":"lifetime","label":"nonliteral"}]}
-{"text":"I 'd rather French kiss a rattlesnake than miss a gym period .","targets":[{"span1":[3,5],"span_word":"french kiss","label":"nonliteral"}]}
-{"text":"I could smell his hellish breath .","targets":[{"span1":[4,5],"span_word":"hellish","label":"nonliteral"}]}
-{"text":"People bend to his will .","targets":[{"span1":[1,2],"span_word":"bend","label":"nonliteral"}]}
-{"text":"The old man is a dinosaur .","targets":[{"span1":[5,6],"span_word":"dinosaur","label":"nonliteral"}]}
-{"text":"Perfection assassinates creativity .","targets":[{"span1":[0,1],"span_word":"","label":"nonliteral"}]}
-{"text":"Molasses buckets appeared from nowhere .","targets":[{"span1":[4,5],"span_word":"nowhere","label":"nonliteral"}]}
-{"text":"New hair , new life .","targets":[{"span1":[3,5],"span_word":"new life","label":"nonliteral"}]}
-{"text":"This is one breathtaking panorama .","targets":[{"span1":[3,4],"span_word":"breathtaking","label":"nonliteral"}]}
-{"text":"If you leave me , I 'll erase you .","targets":[{"span1":[7,8],"span_word":"erase","label":"nonliteral"}]}
-{"text":"Since you stopped partying , you 're a nullity .","targets":[{"span1":[8,9],"span_word":"nullity","label":"nonliteral"}]}
-{"text":"Anna cried blood tears before obtaining her bachelor 's degree .","targets":[{"span1":[2,4],"span_word":"blood tears","label":"nonliteral"}]}
-{"text":"I would commit murder to have that new phone !","targets":[{"span1":[2,4],"span_word":"commit murder","label":"nonliteral"}]}
-{"text":"When my parents enrolled me in college , they basically sentenced me to death .","targets":[{"span1":[10,14],"span_word":"sentenced death","label":"nonliteral"}]}
-{"text":"Our fight has been going on since the beginning of time .","targets":[{"span1":[8,11],"span_word":"beginning time","label":"nonliteral"}]}
-{"text":"He tolerated my annoying questions . That man is a saint .","targets":[{"span1":[10,11],"span_word":"saint","label":"nonliteral"}]}
-{"text":"She is sinking in a sea of misery .","targets":[{"span1":[2,6],"span_word":"sinking sea","label":"nonliteral"}]}
-{"text":"I 've never heard of a hippo with a hernia .","targets":[{"span1":[6,10],"span_word":"hippo hernia","label":"literal"}]}
-{"text":"The story begins with a tempest in a teacup , and sugar cubes transforming into cruise ships .","targets":[{"span1":[5,9],"span_word":"tempest teacup","label":"literal"}]}
-{"text":"We can use the force of a typhoon to generate wind power .","targets":[{"span1":[4,8],"span_word":"force typhoon","label":"literal"}]}
-{"text":"The historic building is going to burst into flames .","targets":[{"span1":[4,7],"span_word":"going burst","label":"literal"}]}
-{"text":"Propane vapor weighs more than air .","targets":[{"span1":[5,6],"span_word":"air","label":"literal"}]}
+{"text":"That old soldier is ready for another battle . He 's made of iron .","targets":[{"span1":[11,14],"span_word":"made iron","label":"nonliteral"}]}
+{"text":"The ancient castle was so big that it took a week to walk from one end to the other .","targets":[{"span1":[9,11],"span_word":"a week","label":"nonliteral"}]}
+{"text":"Do n't touch a woman , not even with a flower .","targets":[{"span1":[7,11],"span_word":"even flower","label":"nonliteral"}]}
+{"text":"Intellectually speaking , this city is almost as sterile as the Sahara Desert .","targets":[{"span1":[11,13],"span_word":"sahara desert","label":"nonliteral"}]}
+{"text":"The temperature was so low , I saw polar bears wearing jackets .","targets":[{"span1":[8,10],"span_word":"polar bears","label":"nonliteral"}]}
+{"text":"Stop bothering him : you 're playing with fire .","targets":[{"span1":[6,9],"span_word":"playing fire","label":"nonliteral"}]}
+{"text":"Let 's be best friends in perpetuity .","targets":[{"span1":[6,7],"span_word":"perpetuity","label":"nonliteral"}]}
+{"text":"It is enough to fright you out of your seven senses .","targets":[{"span1":[9,11],"span_word":"seven senses","label":"nonliteral"}]}
+{"text":"There are no words to describe my admiration .","targets":[{"span1":[2,4],"span_word":"no words","label":"nonliteral"}]}
+{"text":"You are a vision of loveliness , darling !","targets":[{"span1":[3,4],"span_word":"vision","label":"nonliteral"}]}
+{"text":"They are unlike any other olives out there .","targets":[{"span1":[2,3],"span_word":"unlike","label":"nonliteral"}]}
+{"text":"There are no leftovers , he 's a dustbin !","targets":[{"span1":[6,9],"span_word":"'s dustbin","label":"nonliteral"}]}
+{"text":"This room is an oven .","targets":[{"span1":[4,5],"span_word":"oven","label":"nonliteral"}]}
+{"text":"I 've been reading `` The little prince '' since I was knee-high to a grasshopper .","targets":[{"span1":[12,16],"span_word":"knee-high grasshopper","label":"nonliteral"}]}
+{"text":"The pain was unendurable .","targets":[{"span1":[3,4],"span_word":"unendurable","label":"nonliteral"}]}
+{"text":"John has a divine smile .","targets":[{"span1":[3,4],"span_word":"divine","label":"nonliteral"}]}
+{"text":"He thinks that the affectual bonds prevalent in the older world has been pulverized by modernity .","targets":[{"span1":[13,14],"span_word":"pulverized","label":"nonliteral"}]}
+{"text":"When I was young , my family was my universe .","targets":[{"span1":[9,10],"span_word":"universe","label":"nonliteral"}]}
+{"text":"He put loads and loads of cream on his cake .","targets":[{"span1":[2,5],"span_word":"loads loads","label":"nonliteral"}]}
+{"text":"It 's raining cats and dogs .","targets":[{"span1":[3,6],"span_word":"cats dogs","label":"nonliteral"}]}
+{"text":"Look at her furious fingers articulating words as she writes the report .","targets":[{"span1":[3,4],"span_word":"furious","label":"nonliteral"}]}
+{"text":"His feet are colder than the arctic .","targets":[{"span1":[3,7],"span_word":"colder arctic","label":"nonliteral"}]}
+{"text":"I mean this was Toyland in the midst of the depression .","targets":[{"span1":[4,5],"span_word":"toyland","label":"nonliteral"}]}
+{"text":"He changed his mind in the blink of an eye .","targets":[{"span1":[6,10],"span_word":"blink eye","label":"nonliteral"}]}
+{"text":"He is so majestic , when he wears a yellow shirt people yell : `` Hey taxi ! ''","targets":[{"span1":[14,17],"span_word":"`` hey taxi","label":"nonliteral"}]}
+{"text":"No one knows her . She 's mysterious as the dark side of the moon .","targets":[{"span1":[10,12],"span_word":"dark side","label":"nonliteral"}]}
+{"text":"I write my diary when I feel crushed by the weight of life .","targets":[{"span1":[7,11],"span_word":"crushed weight","label":"nonliteral"}]}
+{"text":"There lived a man as big as a barge .","targets":[{"span1":[5,9],"span_word":"big barge","label":"nonliteral"}]}
+{"text":"I 've got a thorn in my heart .","targets":[{"span1":[4,5],"span_word":"thorn","label":"nonliteral"}]}
+{"text":"He 's the worst man on earth .","targets":[{"span1":[3,7],"span_word":"worst earth","label":"nonliteral"}]}
+{"text":"This dirty money we 're using to finance the campaign is a ticking time bomb !","targets":[{"span1":[12,15],"span_word":"ticking time bomb","label":"nonliteral"}]}
+{"text":"Once I would open a bag I could not stop eating .","targets":[{"span1":[9,11],"span_word":"stop eating","label":"nonliteral"}]}
+{"text":"Dresden was kind of the moon , nothing but minerals .","targets":[{"span1":[7,10],"span_word":"nothing minerals","label":"nonliteral"}]}
+{"text":"The perfect pound cake recipe is worth its weight in gold .","targets":[{"span1":[6,11],"span_word":"worth weight gold","label":"nonliteral"}]}
+{"text":"My professor is a volcano of ideas .","targets":[{"span1":[4,5],"span_word":"volcano","label":"nonliteral"}]}
+{"text":"The mail was taking on Alpine proportions .","targets":[{"span1":[5,7],"span_word":"alpine proportions","label":"nonliteral"}]}
+{"text":"That runner is faster than light .","targets":[{"span1":[3,6],"span_word":"faster light","label":"nonliteral"}]}
+{"text":"Well cooked vegetables can be pureed easily .","targets":[{"span1":[1,2],"span_word":"cooked","label":"literal"}]}
+{"text":"Having been purified , the pilgrim would join a sacred orgy .","targets":[{"span1":[10,11],"span_word":"orgy","label":"literal"}]}
+{"text":"As the army forwards , it annihilates the enemy .","targets":[{"span1":[6,7],"span_word":"annihilates","label":"literal"}]}
+{"text":"First aid for a bleeding nose is to pinch the nostrils .","targets":[{"span1":[4,5],"span_word":"bleeding","label":"literal"}]}
+{"text":"The bridge was destroyed .","targets":[{"span1":[3,4],"span_word":"destroyed","label":"literal"}]}
 {"text":"The river runs dry .","targets":[{"span1":[2,4],"span_word":"runs dry","label":"literal"}]}
 {"text":"This is the first crest to be found on the fossil of a dinosaur .","targets":[{"span1":[13,14],"span_word":"dinosaur","label":"literal"}]}
-{"text":"We have n't talked for months .","targets":[{"span1":[5,6],"span_word":"months","label":"literal"}]}
-{"text":"So you are a clown who uses music .","targets":[{"span1":[4,5],"span_word":"clown","label":"literal"}]}
-{"text":"You ridiculously disguised as a captain .","targets":[{"span1":[1,2],"span_word":"ridiculously","label":"literal"}]}
-{"text":"Sentries were given some bullets .","targets":[{"span1":[4,5],"span_word":"bullets","label":"literal"}]}
-{"text":"So many languages are spoken in the world .","targets":[{"span1":[7,8],"span_word":"world","label":"literal"}]}
-{"text":"This robot can lift a sumo wrestler .","targets":[{"span1":[5,7],"span_word":"sumo wrestler","label":"literal"}]}
-{"text":"Many Christians are not focusing on heaven .","targets":[{"span1":[6,7],"span_word":"heaven","label":"literal"}]}
-{"text":"Having some grass over my dead body sounds good .","targets":[{"span1":[5,7],"span_word":"dead body","label":"literal"}]}
-{"text":"Move , there 's no time to explain everything now .","targets":[{"span1":[0,6],"span_word":"move 's time","label":"literal"}]}
-{"text":"People continue to die of starvation .","targets":[{"span1":[3,6],"span_word":"die starvation","label":"literal"}]}
-{"text":"Frank is ready to fly off the continent .","targets":[{"span1":[0,8],"span_word":"frank continent","label":"literal"}]}
-{"text":"Children were kept out of the world of adult entertainment .","targets":[{"span1":[6,7],"span_word":"world","label":"literal"}]}
-{"text":"Get a piece of sandpaper and rub it across the section of wood .","targets":[{"span1":[2,5],"span_word":"piece sandpaper","label":"literal"}]}
+{"text":"The boy 's uniform was slashed into ribbons .","targets":[{"span1":[7,8],"span_word":"boy ribbons","label":"literal"}]}
+{"text":"There exists a boundless number of points within a space .","targets":[{"span1":[3,4],"span_word":"boundless","label":"literal"}]}
+{"text":"With only an arm and a leg , she crawled across the deck .","targets":[{"span1":[3,7],"span_word":"arm leg","label":"literal"}]}
+{"text":"Even a baby could understand what is going on here .","targets":[{"span1":[0,3],"span_word":"even a baby","label":"literal"}]}
+{"text":"Our warehouse could house a commercial aircraft .","targets":[{"span1":[3,7],"span_word":"house a commercial aircraft","label":"literal"}]}
+{"text":"A moth looks like a worm .","targets":[{"span1":[3,6],"span_word":"like worm","label":"literal"}]}
+{"text":"My right arm became painful . It hurts my shoulder .","targets":[{"span1":[4,5],"span2":[7,8],"span_word":"painful","label":"literal"}]}
+{"text":"I depend on nicotine for emotional stability .","targets":[{"span1":[1,3],"span_word":"depend on","label":"literal"}]}
+{"text":"The current sort of short-circuits through their body .","targets":[{"span1":[2,5],"span_word":"sort short-circuits","label":"literal"}]}
+{"text":"Do n't blame him , he 's still a kid .","targets":[{"span1":[7,10],"span_word":"still kid","label":"literal"}]}
+{"text":"The exhibition runs the whole gamut of artistic styles .","targets":[{"span1":[4,6],"span_word":"whole gamut","label":"literal"}]}
+{"text":"The priest said that compassion is a stairway to heaven .","targets":[{"span1":[7,10],"span_word":"stairway heaven","label":"literal"}]}
+{"text":"A land mine fell near shifting the two roads .","targets":[{"span1":[1,3],"span_word":"land mine","label":"literal"}]}
+{"text":"Villagers live in terror that they would be bitten by a vampire .","targets":[{"span1":[11,12],"span_word":"vampire","label":"literal"}]}
+{"text":"If I were the happiest man alive , I 'd tell you .","targets":[{"span1":[4,7],"span_word":"happiest man alive","label":"literal"}]}
+{"text":"Frank is ready to fly off the continent .","targets":[{"span1":[5,8],"span_word":"off the continent","label":"literal"}]}
+{"text":"He did n't like the people or the god of their cult .","targets":[{"span1":[8,9],"span_word":"god","label":"literal"}]}
+{"text":"Children were kept out of the world of adult entertainment .","targets":[{"span1":[3,7],"span_word":"out of the world","label":"literal"}]}
+{"text":"Someone stabbed me in the back but missed my heart .","targets":[{"span1":[1,6],"span_word":"stabbed back","label":"literal"}]}
 {"text":"First relief arrives after eight days .","targets":[{"span1":[4,6],"span_word":"eight days","label":"literal"}]}
-{"text":"I could ride the wave of popularity .","targets":[{"span1":[1,3],"span_word":"could ride","label":"literal"}]}
-{"text":"We were directed to nowhere in particular .","targets":[{"span1":[4,5],"span_word":"nowhere","label":"literal"}]}
-{"text":"The emperor 's statue is here , throned in blue sky like a sphinx .","targets":[{"span1":[9,12],"span_word":"blue sky like","label":"literal"}]}
-{"text":"He broadens his influence by traveling to different cities .","targets":[{"span1":[1,2],"span_word":"broadens","label":"literal"}]}
-{"text":"The gate of the school is made of iron .","targets":[{"span1":[6,9],"span_word":"made iron","label":"literal"}]}
-{"text":"The god Shiva uses a third eye to see beyond the apparent .","targets":[{"span1":[5,7],"span_word":"third eye","label":"literal"}]}
-{"text":"This is the single most expensive cake in the city .","targets":[{"span1":[3,4],"span_word":"single","label":"literal"}]}
-{"text":"Big Bang is described as the greatest explosion in the history of the universe .","targets":[{"span1":[6,14],"span_word":"greatest history universe","label":"literal"}]}
-{"text":"After the levelling , the summit of the hill dropped by ten metres .","targets":[{"span1":[5,6],"span_word":"summit","label":"literal"}]}
-{"text":"The beds were horrid filthy and full of vermin .","targets":[{"span1":[8,9],"span_word":"vermin","label":"literal"}]}
-{"text":"I found the collar of the lap dog .","targets":[{"span1":[0,1],"span_word":"","label":"literal"}]}
-{"text":"Apollo and Adonis are tributes to beauty .","targets":[{"span1":[0,1],"span_word":"","label":"literal"}]}
-{"text":"I could fly and become invisible , so I realized it must be a dream !","targets":[{"span1":[11,15],"span_word":"must dream","label":"literal"}]}
+{"text":"The patient may still be irreversibly comatose .","targets":[{"span1":[6,7],"span_word":"comatose","label":"literal"}]}
+{"text":"He caught some virus from a jungle .","targets":[{"span1":[6,7],"span_word":"jungle","label":"literal"}]}
+{"text":"He managed to break every bone in his middle finger .","targets":[{"span1":[3,6],"span_word":"break every bone","label":"literal"}]}
+{"text":"They learnt that explosives could split rocks .","targets":[{"span1":[4,7],"span_word":"could split rocks","label":"literal"}]}
+{"text":"The shining star over there seems to be moving .","targets":[{"span1":[1,3],"span_word":"shining star","label":"literal"}]}
+{"text":"Big Bang is described as the greatest explosion in the history of the universe .","targets":[{"span1":[10,14],"span_word":"history universe","label":"literal"}]}
+{"text":"Greek travelers were tortured on a Procrustean bed .","targets":[{"span1":[6,8],"span_word":"procrustean bed","label":"literal"}]}
+{"text":"She ca n't see anything since the accident impaired her view .","targets":[{"span1":[1,4],"span_word":"ca n't see","label":"literal"}]}
+{"text":"Unfortunately , these surgeries will change your life .","targets":[{"span1":[5,8],"span_word":"change life","label":"literal"}]}
+{"text":"There were two goldfish in a bowl .","targets":[{"span1":[2,4],"span_word":"two goldfish","label":"literal"}]}
+{"text":"Fill your wardrobe with the latest peasant shirts .","targets":[{"span1":[0,1],"span_word":"fill","label":"literal"}]}
+{"text":"Supporting the flatness of Earth is absurd .","targets":[{"span1":[6,7],"span_word":"absurd","label":"literal"}]}
+{"text":"T-Shirts are a hundred percent cotton .","targets":[{"span1":[3,5],"span_word":"hundred percent","label":"literal"}]}
+{"text":"A Puma was kept in a cage so small he could not even turn around .","targets":[{"span1":[12,15],"span_word":"even turn around","label":"literal"}]}
+{"text":"The touch of this mosquito is like a single snowflake in the palm of your hand .","targets":[{"span1":[8,10],"span_word":"single snowflake","label":"literal"}]}
 {"text":"Tracey 's kitchen goes up in smoke .","targets":[{"span1":[3,7],"span_word":"goes smoke","label":"literal"}]}
-{"text":"Many brands are sold commercially for far less .","targets":[{"span1":[3,4],"span_word":"sold","label":"literal"}]}
-{"text":"Afflicted by an outbreak of fever , they were speaking deliriously .","targets":[{"span1":[10,11],"span_word":"deliriously","label":"literal"}]}
-{"text":"I could live on very limited means .","targets":[{"span1":[1,3],"span_word":"could live","label":"literal"}]}
-{"text":"Two bars of the gate are sharp like the points of two picks .","targets":[{"span1":[6,8],"span_word":"sharp like","label":"literal"}]}
-{"text":"I think her friend is blind .","targets":[{"span1":[5,6],"span_word":"blind","label":"literal"}]}
-{"text":"Being aware of our thoughts is the unmistakable sign that we exist .","targets":[{"span1":[7,8],"span_word":"unmistakable","label":"literal"}]}
+{"text":"Collective training of the battalion is conducted here .","targets":[{"span1":[4,5],"span_word":"","label":"literal"}]}
+{"text":"The cruelest judgment I received is that I was a liar .","targets":[{"span1":[1,2],"span_word":"cruelest","label":"literal"}]}
+{"text":"A small army of security agents converged on the house .","targets":[{"span1":[2,3],"span_word":"army","label":"literal"}]}
+{"text":"I started saving my monthly money .","targets":[{"span1":[4,6],"span_word":"monthly money","label":"literal"}]}
+{"text":"Fishermen pledged to combat the waves of the sea in a storm .","targets":[{"span1":[8,12],"span_word":"sea storm","label":"literal"}]}
 {"text":"Having a gorilla in the picture would ruin it .","targets":[{"span1":[2,3],"span_word":"gorilla","label":"literal"}]}
-{"text":"The horrors must be stopped everywhere .","targets":[{"span1":[5,6],"span_word":"everywhere","label":"literal"}]}
-{"text":"The monk said he was lost in a spiritual rapture .","targets":[{"span1":[9,10],"span_word":"rapture","label":"literal"}]}
-{"text":"Cockroaches are die hard creatures .","targets":[{"span1":[2,4],"span_word":"die hard","label":"literal"}]}
-{"text":"Chris wonders if there is civilization on the other side of the Universe .","targets":[{"span1":[0,13],"span_word":"chris side universe","label":"literal"}]}
-{"text":"Time and experience will make a man of him .","targets":[{"span1":[4,7],"span_word":"make man","label":"literal"}]}
-{"text":"I received the transfusion . My father 's blood now floods into my veins .","targets":[{"span1":[10,14],"span_word":"floods veins","label":"literal"}]}
-{"text":"The stone temple was simply colossal .","targets":[{"span1":[4,6],"span_word":"simply colossal","label":"literal"}]}
-{"text":"You see caravans delivering loads of water .","targets":[{"span1":[4,5],"span_word":"loads","label":"literal"}]}
-{"text":"The murderer was clearly a madman .","targets":[{"span1":[5,6],"span_word":"madman","label":"literal"}]}
-{"text":"If the relationship becomes intolerable","targets":[{"span1":[4,5],"span_word":"intolerable","label":"literal"}]}
-{"text":"The lesson was about the world spinning around its axis .","targets":[{"span1":[5,8],"span_word":"world spinning around","label":"literal"}]}
-{"text":"Johnny worshipped the statue of the reigning ruler .","targets":[{"span1":[0,2],"span_word":"johnny worshipped","label":"literal"}]}
-{"text":"In his dreams , Toyland was a place where all the toys lived together .","targets":[{"span1":[4,5],"span_word":"toyland","label":"literal"}]}
-{"text":"I can eat about a million calories a year and maintain my weight .","targets":[{"span1":[5,7],"span_word":"million calories","label":"literal"}]}
+{"text":"Chris wonders if there is civilization on the other side of the Universe .","targets":[{"span1":[8,13],"span_word":"other side universe","label":"literal"}]}
+{"text":"Drug-infused blood entered my brain .","targets":[{"span1":[4,5],"span_word":"brain","label":"literal"}]}
+{"text":"Alchemists considered volatile oils to be the soul of a plant .","targets":[{"span1":[7,8],"span_word":"soul","label":"literal"}]}
+{"text":"Never share a needle or syringe if you 're injecting drugs .","targets":[{"span1":[0,1],"span_word":"never","label":"literal"}]}
+{"text":"The accuracy of the new algorithm is ten times better than the old .","targets":[{"span1":[7,10],"span_word":"ten times better","label":"literal"}]}
+{"text":"This tiger is big like a lion , and white as a lamb .","targets":[{"span1":[4,5],"span2":[10,13],"span_word":"like lion","label":"literal"}]}
+{"text":"Black holes are particularly interesting astronomically .","targets":[{"span1":[5,6],"span_word":"astronomically","label":"literal"}]}
+{"text":"Years of abundance was coming in all the land of Egypt .","targets":[{"span1":[8,9],"span_word":"land","label":"literal"}]}
+{"text":"He lost his shirt in the crowd .","targets":[{"span1":[1,4],"span_word":"lost shirt","label":"literal"}]}
+{"text":"I resign from my job .","targets":[{"span1":[1,2],"span_word":"resign","label":"literal"}]}
+{"text":"Monstrous beings are frequent in myths .","targets":[{"span1":[0,1],"span_word":"monstrous","label":"literal"}]}
+{"text":"My body was being crushed by a truck .","targets":[{"span1":[4,5],"span_word":"crushed","label":"literal"}]}
+{"text":"They 're going to wreck the machines .","targets":[{"span1":[2,5],"span_word":"going wreck","label":"literal"}]}
+{"text":"He thought a place awaited him in paradise .","targets":[{"span1":[7,8],"span_word":"paradise","label":"literal"}]}
+{"text":"You should clean the wall with a real paint-remover .","targets":[{"span1":[7,9],"span_word":"real paint-remover","label":"literal"}]}
+{"text":"I am studying the literature of the last three centuries .","targets":[{"span1":[7,10],"span_word":"last centuries","label":"literal"}]}
+{"text":"That was the end of the pindaric flight .","targets":[{"span1":[6,8],"span_word":"pindaric flight","label":"literal"}]}
+{"text":"Lots of vessels sunk in the storm .","targets":[{"span1":[3,4],"span_word":"sunk","label":"literal"}]}
+{"text":"Do not try to French kiss a rattlesnake .","targets":[{"span1":[4,6],"span_word":"french kiss","label":"literal"}]}
+{"text":"Outside the weather is beautiful , blue sky and rising sun .","targets":[{"span1":[9,11],"span_word":"rising sun","label":"literal"}]}
+{"text":"A perfect porcelain doll has no cracks .","targets":[{"span1":[1,4],"span_word":"perfect porcelain doll","label":"literal"}]}
 {"text":"Hydrogen shows the cloud to be light years away from the earth .","targets":[{"span1":[6,9],"span_word":"light years away","label":"literal"}]}
-{"text":"Waxy-eared persons should go to the otolaryngologist .","targets":[{"span1":[0,1],"span_word":"waxy-eared","label":"literal"}]}
-{"text":"I forgot what her name is .","targets":[{"span1":[4,5],"span_word":"name","label":"literal"}]}
-{"text":"Invite a seafarer and explore the abyss of the ocean together .","targets":[{"span1":[6,7],"span_word":"abyss","label":"literal"}]}
-{"text":"The shelves contained crystal clear glasses .","targets":[{"span1":[3,5],"span_word":"crystal clear","label":"literal"}]}
-{"text":"The boxer threw a punch in the gut of his opponent .","targets":[{"span1":[4,8],"span_word":"punch gut","label":"literal"}]}
-{"text":"When it brews there is drips of water coming out .","targets":[{"span1":[5,6],"span_word":"drips","label":"literal"}]}
-{"text":"On every occasion there was a suicide attempt .","targets":[{"span1":[6,7],"span_word":"suicide","label":"literal"}]}
-{"text":"These answers are what we wanted to hear .","targets":[{"span1":[0,1],"span_word":"","label":"literal"}]}
-{"text":"These steam seeps provide an oasis of moisture in the desert .","targets":[{"span1":[5,8],"span_word":"oasis moisture","label":"literal"}]}
-{"text":"An anaconda tried to swallow the cow .","targets":[{"span1":[4,7],"span_word":"swallow cow","label":"literal"}]}
-{"text":"The strategy may prevent rebellion in the circumstance of some cruel tyrant .","targets":[{"span1":[11,12],"span_word":"tyrant","label":"literal"}]}
-{"text":"Limitation on employment and property ownership were a recipe for disaster in the country .","targets":[{"span1":[8,11],"span_word":"recipe disaster","label":"literal"}]}
-{"text":"The fight continues to bring the neighborhood its own zip code .","targets":[{"span1":[9,11],"span_word":"zip code","label":"literal"}]}
-{"text":"Commercial airplanes carry a huge tank of oxygen .","targets":[{"span1":[7,8],"span_word":"oxygen","label":"literal"}]}
+{"text":"Her associates were invariably businessmen .","targets":[{"span1":[3,4],"span_word":"invariably","label":"literal"}]}
+{"text":"Only yesterday , I ordered the registration of children .","targets":[{"span1":[1,2],"span_word":"yesterday","label":"literal"}]}
+{"text":"Judas Iscariot hanged himself .","targets":[{"span1":[0,1],"span_word":"judas","label":"literal"}]}
+{"text":"People had to drink water from a river nearby .","targets":[{"span1":[3,8],"span_word":"drink river","label":"literal"}]}
+{"text":"The sources of inspiration are seemingly endless .","targets":[{"span1":[6,7],"span_word":"endless","label":"literal"}]}
+{"text":"They might enquire whether the cargo was dynamite .","targets":[{"span1":[7,8],"span_word":"dynamite","label":"literal"}]}
+{"text":"Pirates where sinking in a sea of cold water .","targets":[{"span1":[2,6],"span_word":"sinking sea","label":"literal"}]}
+{"text":"The eggs have cracked up .","targets":[{"span1":[3,4],"span_word":"cracked","label":"literal"}]}
