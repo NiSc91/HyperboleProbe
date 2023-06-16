@@ -314,9 +314,9 @@ class Dataset_handler:
             self.json_to_dataset('./edge-probing-datasets/metaphor/lcc/ru/ru_test10_current.json', data_type="test", fraction = frac)
         elif dataset_info.dataset_name == "hypo_en":
             frac = 1
-            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False)
-            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac)
-            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac)
+            self.json_to_dataset('./preprocessed_hypo_dataset/train.json', data_type="train", fraction = frac, keep_order=False, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/test.json', data_type="test", fraction = frac, to_sentence_span=True)
+            self.json_to_dataset('./preprocessed_hypo_dataset/dev.json', data_type="dev", fraction = frac, to_sentence_span=True)
         elif dataset_info.dataset_name == "manual":
             frac = 1
             f = open("./manual_dataset.json", "w")  
@@ -1329,6 +1329,7 @@ class Edge_probe_trainer(Trainer):
         # Save figures
         fig_path = os.path.join("edge_probing_results", "edge"+"_"+model_checkpoint+"_"+self.dataset_handler.dataset_info.dataset_name+"_"+str(SEED))
         if not os.path.exists(fig_path):
+            os.makedirs(os.path.dirname(fig_path), exist_ok=True)
             os.mkdir(fig_path)
 
         if(epoch % 1 == 0):

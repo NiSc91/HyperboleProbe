@@ -1,0 +1,143 @@
+,text,labels,preds_1,preds_2,preds_3,preds_4,preds_5,preds_6,preds_7,preds_8,preds_9,preds_10,preds_11,preds_12,preds_13
+0,It 's raining cats and dogs .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+1,The river runs dry .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+2,"When everyone went home for holidays , the campus became a ghost town .",0,1,1,1,1,1,1,1,1,1,1,1,1,1
+3,This dirty money we 're using to finance the campaign is a ticking time bomb !,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+4,"I 'm quite imperturbable , only UFO can rock me .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+5,I know this place like the back of my hand .,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+6,The cruelest judgment I received is that I was a liar .,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+7,Pirates where sinking in a sea of cold water .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+8,He did n't like the people or the god of their cult .,1,1,1,1,1,1,1,1,1,1,0,1,1,1
+9,Fill your wardrobe with the latest peasant shirts .,1,0,0,1,0,1,1,1,1,1,1,0,1,0
+10,They learnt that explosives could split rocks .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+11,You should clean the wall with a real paint-remover .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+12,He 's a wrecking ball for the future of the Party .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+13,"Unfortunately , these surgeries will change your life .",1,0,0,1,0,0,0,1,1,1,1,0,1,0
+14,They might enquire whether the cargo was dynamite .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+15,It is enough to fright you out of your seven senses .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+16,Villagers live in terror that they would be bitten by a vampire .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+17,"If I were the happiest man alive , I 'd tell you .",1,0,0,0,0,0,0,0,0,0,0,0,0,0
+18,Alchemists considered volatile oils to be the soul of a plant .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+19,"Starting from today , I 'm a brand new person .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+20,Well cooked vegetables can be pureed easily .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+21,Frank is ready to fly off the continent .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+22,My professor is a volcano of ideas .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+23,That old soldier is ready for another battle . He 's made of iron .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+24,That runner is faster than light .,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+25,I do not breathe without you .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+26,Even a baby could understand what is going on here .,1,0,1,1,0,0,1,1,1,0,0,0,0,0
+27,Tracey 's kitchen goes up in smoke .,1,0,0,0,0,0,0,0,0,1,0,0,0,0
+28,He put loads and loads of cream on his cake .,0,1,1,1,1,0,0,0,0,0,0,0,0,0
+29,He thought a place awaited him in paradise .,1,0,0,0,0,0,1,1,1,1,0,1,1,1
+30,You 'll devour the book in a couple of days .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+31,The ancient castle was so big that it took a week to walk from one end to the other .,0,0,0,1,1,1,1,0,0,1,1,0,0,1
+32,My right arm became painful . It hurts my shoulder .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+33,So much snow that it 's like walking in the firmament .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+34,"When I was young , my family was my universe .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+35,T-Shirts are a hundred percent cotton .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+36,I 've got a thorn in my heart .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+37,The shining star over there seems to be moving .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+38,No one knows her . She 's mysterious as the dark side of the moon .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+39,The current sort of short-circuits through their body .,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+40,I started saving my monthly money .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+41,He managed to break every bone in his middle finger .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+42,First relief arrives after eight days .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+43,First aid for a bleeding nose is to pinch the nostrils .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+44,"The temperature was so low , I saw polar bears wearing jackets .",0,1,1,1,1,1,1,1,0,0,1,1,1,1
+45,"He is so majestic , when he wears a yellow shirt people yell : `` Hey taxi ! ''",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+46,Years of abundance was coming in all the land of Egypt .,1,1,1,1,1,1,0,1,0,0,1,1,1,1
+47,My body was being crushed by a truck .,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+48,The perfect pound cake recipe is worth its weight in gold .,0,0,1,1,1,1,0,0,0,0,0,0,0,0
+49,They 're going to wreck the machines .,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+50,Lots of vessels sunk in the storm .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+51,Fishermen pledged to combat the waves of the sea in a storm .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+52,I mean this was Toyland in the midst of the depression .,0,0,0,0,0,0,0,0,0,1,1,0,0,0
+53,Judas Iscariot hanged himself .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+54,Hydrogen shows the cloud to be light years away from the earth .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+55,"Sometimes , ignorance is bliss .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+56,The mail was taking on Alpine proportions .,0,1,1,1,1,1,0,0,0,0,0,0,0,0
+57,She ca n't see anything since the accident impaired her view .,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+58,I am studying the literature of the last three centuries .,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+59,Big Bang is described as the greatest explosion in the history of the universe .,1,1,1,0,1,1,1,1,1,1,1,1,1,1
+60,I resign from my job .,1,0,0,0,0,0,1,1,1,1,1,1,1,1
+61,These are the proofs of the invincible smartness of the human race .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+62,There exists a boundless number of points within a space .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+63,The pain was unendurable .,0,1,1,1,0,1,1,1,1,1,0,0,0,0
+64,I write my diary when I feel crushed by the weight of life .,0,0,1,0,0,0,0,0,0,0,0,0,0,1
+65,My sisters mean more than air to me .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+66,Black holes are particularly interesting astronomically .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+67,Supernatural courage is needed when bringing a message to a hostile audience .,0,1,0,0,1,1,1,1,1,1,1,1,1,1
+68,Drug-infused blood entered my brain .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+69,Your body is a wonderland .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+70,Having a gorilla in the picture would ruin it .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+71,Collective training of the battalion is conducted here .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+72,The patient may still be irreversibly comatose .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+73,Look at her furious fingers articulating words as she writes the report .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+74,It is a truth universally acknowledged that a single man in possession of a fortune must be in want of a wife .,0,0,0,0,0,0,0,0,0,0,1,0,0,1
+75,Greek travelers were tortured on a Procrustean bed .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+76,Supporting the flatness of Earth is absurd .,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+77,John has a divine smile .,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+78,The sources of inspiration are seemingly endless .,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+79,The argument with my bestfriend turned into a tempest in a teacup .,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+80,Chris wonders if there is civilization on the other side of the Universe .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+81,"Outside the weather is beautiful , blue sky and rising sun .",1,1,1,0,0,1,1,1,1,0,1,1,1,1
+82,He thinks that the affectual bonds prevalent in the older world has been pulverized by modernity .,0,0,0,0,1,1,1,1,1,1,1,1,1,1
+83,Moms are more powerful than the sea .,0,1,0,0,0,0,1,1,1,0,1,0,0,0
+84,The accuracy of the new algorithm is ten times better than the old .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+85,Be silent as a ninja .,0,1,1,0,0,0,0,0,0,0,0,0,0,1
+86,This room is an oven .,0,0,0,1,1,1,1,1,1,0,1,0,1,0
+87,Nothing 's impossible !,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+88,There lived a man as big as a barge .,0,1,0,1,1,1,1,1,1,1,0,1,0,1
+89,"Only yesterday , I ordered the registration of children .",1,1,1,1,1,1,1,0,1,1,1,1,1,1
+90,He caught some virus from a jungle .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+91,Marriage is the grave of love .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+92,There are no words to describe my admiration .,0,1,0,0,0,0,0,0,1,0,0,0,0,0
+93,"Do n't touch a woman , not even with a flower .",0,1,1,1,0,0,0,0,1,1,1,0,1,0
+94,He 's the worst man on earth .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+95,A moth looks like a worm .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+96,"You are a vision of loveliness , darling !",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+97,I can conquer the world with you by my side .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+98,Our warehouse could house a commercial aircraft .,1,1,0,1,1,1,1,1,1,1,1,1,1,1
+99,Stop bothering him : you 're playing with fire .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+100,The touch of this mosquito is like a single snowflake in the palm of your hand .,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+101,Once I would open a bag I could not stop eating .,0,1,1,1,1,1,1,1,1,1,1,1,1,1
+102,Monstrous beings are frequent in myths .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+103,"As the army forwards , it annihilates the enemy .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
+104,Let 's be best friends in perpetuity .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+105,Do not try to French kiss a rattlesnake .,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+106,Your speech evokes a thousand sympathies .,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+107,A small army of security agents converged on the house .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+108,Better be out of the world than out of the fashion .,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+109,"Intellectually speaking , this city is almost as sterile as the Sahara Desert .",0,1,0,0,1,1,0,0,0,0,0,0,0,0
+110,He changed his mind in the blink of an eye .,0,1,1,1,0,1,0,0,0,0,0,0,0,0
+111,That was the end of the pindaric flight .,1,0,0,0,0,0,0,0,0,0,1,0,0,0
+112,There were two goldfish in a bowl .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+113,A land mine fell near shifting the two roads .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+114,"Having been purified , the pilgrim would join a sacred orgy .",1,1,1,1,1,1,0,1,0,1,1,1,1,1
+115,The eggs have cracked up .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+116,"Do n't blame him , he 's still a kid .",1,0,0,0,0,0,0,0,0,0,0,0,0,0
+117,This is the first crest to be found on the fossil of a dinosaur .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+118,He lost his shirt in the crowd .,1,0,0,0,0,1,0,0,0,1,1,0,1,1
+119,The exhibition runs the whole gamut of artistic styles .,1,0,0,1,1,1,0,0,0,0,0,0,0,0
+120,Never share a needle or syringe if you 're injecting drugs .,1,0,0,0,0,1,1,1,1,1,1,1,1,1
+121,My tongue is a piece of sandpaper .,0,0,1,1,1,0,0,0,0,0,0,0,0,0
+122,People had to drink water from a river nearby .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+123,"With only an arm and a leg , she crawled across the deck .",1,1,1,1,1,1,1,1,1,1,1,1,1,1
+124,I depend on nicotine for emotional stability .,1,1,1,1,0,1,1,1,1,1,1,1,1,1
+125,I would give my possessions for a pot of ale .,0,1,1,1,1,1,1,0,1,1,1,0,0,1
+126,"There are no leftovers , he 's a dustbin !",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+127,The priest said that compassion is a stairway to heaven .,1,1,0,0,1,0,0,0,0,0,0,0,0,1
+128,A perfect porcelain doll has no cracks .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+129,Her associates were invariably businessmen .,1,0,0,0,0,1,0,0,0,1,1,1,1,1
+130,I 've been reading `` The little prince '' since I was knee-high to a grasshopper .,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+131,"Dresden was kind of the moon , nothing but minerals .",0,0,0,0,1,0,0,0,0,1,1,1,0,0
+132,Someone stabbed me in the back but missed my heart .,1,0,1,1,1,1,1,1,1,1,1,1,1,1
+133,The boy 's uniform was slashed into ribbons .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+134,Children were kept out of the world of adult entertainment .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+135,They are unlike any other olives out there .,0,1,0,1,0,1,1,1,1,1,1,1,1,1
+136,"And your father and I worked on those plans together , for months and months and months .",0,0,0,0,0,0,0,0,0,0,0,0,0,0
+137,They were probably hoping to crucify me in front of the whole world .,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+138,A Puma was kept in a cage so small he could not even turn around .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+139,The bridge was destroyed .,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+140,"This tiger is big like a lion , and white as a lamb .",1,0,1,0,1,1,1,1,1,1,1,1,1,1
+141,His feet are colder than the arctic .,0,1,1,1,1,1,1,1,1,0,0,0,0,0

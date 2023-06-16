@@ -1,20 +1,15 @@
+# Probing for Hyperbole in Pre-trained Language Models
 
-# Metaphors in Pre-Trained Language Models: <br> Probing and Generalization Across Datasets and Languages
+_Accepted as a paper at the Student Research Workshop (SRW) at ACL 2023_
 
-_Accepted as a conference paper at ACL 2022_
+> **Abstract**: Hyperbole is a common figure of speech, which is under-explored in NLP research. In this study, we conduct edge and minimal description length (MDL) probing experiments for three pre-trained language models (PLMs) in an attempt to explore the extent to which hyperbolic information is encoded in these models. We use both word-in-context and sentence-level representations as model inputs as a basis for comparison. We also annotate 63 hyperbole sentences from the HYPO dataset according to an operational taxonomy to conduct an error analysis to explore the encoding of different hyperbole categories. Our results show that hyperbole is to a limited extent encoded in PLMs, and mostly in the final layers. They also indicate that hyperbolic information may be better encoded by the sentence-level representations, which, due to the pragmatic nature of hyperbole, may therefore provide a more accurate and informative representation in PLMs. Finally, the inter-annotator agreement for our annotations, a Cohen's Kappa of 0.339, suggest that the taxonomy categories may not be intuitive and need revision or simplification.
 
-[📝 Arxiv](https://arxiv.org/abs/2203.14139)
-[🎥 Video](https://www.youtube.com/watch?v=UKWFZSiP7OY)
-[🖼️ Poster](https://mohsenfayyaz.github.io/files/publications/2022_metaphors_in_plms/metaphors_poster_36x48.pdf)
+## Notes
 
-
-> **Abstract**: Human languages are full of metaphorical expressions. Metaphors help people understand the world by connecting new concepts and domains to more familiar ones. Large pre-trained language models (PLMs) are therefore assumed to encode metaphorical knowledge useful for NLP systems. In this paper, we investigate this hypothesis for PLMs, by probing metaphoricity information in their encodings, and by measuring the cross-lingual and cross-dataset generalization of this information. We present studies in multiple metaphor detection datasets and in four languages (i.e., English, Spanish, Russian, and Farsi). Our extensive experiments suggest that contextual representations in PLMs do encode metaphorical knowledge, and mostly in their middle layers. The knowledge is transferable between languages and datasets, especially when the annotation is consistent across training and testing sets. Our findings give helpful insights for both cognitive and NLP scientists.
-
-
+This is a fork from the paper [Metaphors in pre-trained Language Models](https://arxiv.org/abs/2203.14139), the original of which can be found [here](https://github.com/EhsanAghazadeh/Metaphors_in_PLMs). We built on top of the existing code and adapted our experiments on hyperbole.
+- The HYPO dataset is created by Troiano et Al. as part of their paper, [A Computational Exploration of Exaggeration](https://aclanthology.org/D18-1367.pdf). It can be freely distributed under the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Running Probings
-An online colab notebook is available at [Metaphor_Demo.ipynb](Metaphor_Demo.ipynb)
-
 You can run the probings by running the following command:
 ```
 python3 {EDGE_CODE_PATH/MDL_CODE_PATH} {MODEL_NAME} {TASK_NAME} {SEED}
