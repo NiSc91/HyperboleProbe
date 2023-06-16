@@ -6,7 +6,7 @@ _Accepted as a paper at the Student Research Workshop (SRW) at ACL 2023_
 
 ## Notes
 
-This is a fork from the paper [Metaphors in pre-trained Language Models](https://arxiv.org/abs/2203.14139), the original of which can be found [here](https://github.com/EhsanAghazadeh/Metaphors_in_PLMs). We built on top of the existing code and adapted our experiments on hyperbole.
+This is a fork from the repository associated with the paper [Metaphors in pre-trained Language Models](https://arxiv.org/abs/2203.14139), the original of which can be found [here](https://github.com/EhsanAghazadeh/Metaphors_in_PLMs). We built on top of the existing code and adapted our experiments on hyperbole.
 - The HYPO dataset is created by Troiano et Al. as part of their paper, [A Computational Exploration of Exaggeration](https://aclanthology.org/D18-1367.pdf). It can be freely distributed under the [Creative Commons License](https://creativecommons.org/licenses/by/4.0/).
 
 ## Running Probings
